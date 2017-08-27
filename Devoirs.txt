@@ -1,11 +1,11 @@
 Lundi;
--Lire notes de cours Prog
+-Obtenir doc Français
 Mardi;
--Terminer programme Algo
--Faire devoirs Syst
+-
 Mercredi;
--Faire deux pages Escrime
--Faire devoir Français
+-
 Jeudi;
-
+-Faire devoir anglais
+-Imprimer texte anglais
 Vendredi;
+-

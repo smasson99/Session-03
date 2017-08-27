@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FonctionsDiverses", "FonctionsDiverses\FonctionsDiverses.vcxproj", "{834C66D4-7A07-43AA-9A02-1FDB7D88EAA8}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TableauxStaticConstantes", "TableauxStaticConstantes\TableauxStaticConstantes.vcxproj", "{CAB482F8-05CF-4970-A10D-B531EA0A7B8C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{834C66D4-7A07-43AA-9A02-1FDB7D88EAA8}.Debug|Win32.ActiveCfg = Debug|Win32
+		{834C66D4-7A07-43AA-9A02-1FDB7D88EAA8}.Debug|Win32.Build.0 = Debug|Win32
+		{834C66D4-7A07-43AA-9A02-1FDB7D88EAA8}.Release|Win32.ActiveCfg = Release|Win32
+		{834C66D4-7A07-43AA-9A02-1FDB7D88EAA8}.Release|Win32.Build.0 = Release|Win32
+		{CAB482F8-05CF-4970-A10D-B531EA0A7B8C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CAB482F8-05CF-4970-A10D-B531EA0A7B8C}.Debug|Win32.Build.0 = Debug|Win32
+		{CAB482F8-05CF-4970-A10D-B531EA0A7B8C}.Release|Win32.ActiveCfg = Release|Win32
+		{CAB482F8-05CF-4970-A10D-B531EA0A7B8C}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

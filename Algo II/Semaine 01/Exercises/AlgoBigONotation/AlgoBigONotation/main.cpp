@@ -63,20 +63,10 @@ void printQuantityOfEvenNumbersBetweenInclusiveV2(int start, int end)
     //Pour cette version, ne pas utiliser de boucle.
 
     //Déclaration des variables:
-    int nombre = 0;
-    if (start > end)
-    {
-        cout << nombre;
-    }
-    else if (start % 2 == 0)
-    {
-        nombre++;
-        printQuantityOfEvenNumbersBetweenInclusiveV2(start++, end);
-    }
-    else
-    {
-        printQuantityOfEvenNumbersBetweenInclusiveV2(start++, end);
-    }
+    int nombreDeNbPairs = 0;
+    int nb = end - start;
+    nombreDeNbPairs = (int)(nb / 2) + 1;
+    cout << nombreDeNbPairs;
 }
 
 
