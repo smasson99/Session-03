@@ -1,0 +1,7 @@
+﻿  SFMLCircle.cpp
+  Main.cpp
+  Game.cpp
+c:\users\smasson99\desktop\session-03\programmation de jeux vidéos iii\semaine 02\cours 01\exercises\exercicesetu\exercices\exemplesfml2\game.cpp(104): warning C4244: 'argument' : conversion de 'unsigned int' en 'float', perte possible de données
+  Génération de code en cours...
+  ExempleSFML2.vcxproj -> C:\Users\smasson99\Desktop\Session-03\Programmation de Jeux Vidéos III\Semaine 02\Cours 01\Exercises\ExercicesETU\Exercices\Debug\ExempleSFML2.exe
+  ExempleSFML2.vcxproj -> C:\Users\smasson99\Desktop\Session-03\Programmation de Jeux Vidéos III\Semaine 02\Cours 01\Exercises\ExercicesETU\Exercices\Debug\ExempleSFML2.pdb (Full PDB)
