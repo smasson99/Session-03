@@ -26,7 +26,7 @@ bool Ball::Init()
 Ball::Ball()
 {
     ballTexture.loadFromFile("Assets\\Sprites\\soccerBall.png");
-    this->angle = -45.00f;
+    this->angle = 45.00f;
     this->radius = 50.00f;
 }
 
@@ -61,7 +61,7 @@ void Ball::Update(sf::RenderWindow& window)
     {
         if (angle >= 0 && angle <= 90)
         {
-            if (sprite.getPosition().x >= window.getSize().x)
+            if (sprite.getPosition().x >= window.getSize().x-30)
             {
                 SetAngle(angle + angleChange);
             }
@@ -72,7 +72,7 @@ void Ball::Update(sf::RenderWindow& window)
         }
         else if (angle > 90 && angle <= 180)
         {
-            if (sprite.getPosition().x <= 0)
+            if (sprite.getPosition().x <= 30)
             {
                 SetAngle(angle + angleChange);
             }
@@ -83,7 +83,7 @@ void Ball::Update(sf::RenderWindow& window)
         }
         else if (angle > 180 && angle <= 270)
         {
-            if (sprite.getPosition().x <= 0)
+            if (sprite.getPosition().x <= 30)
             {
                 SetAngle(angle + angleChange);
             }
@@ -94,7 +94,7 @@ void Ball::Update(sf::RenderWindow& window)
         }
         else if (angle > 270 && angle <= 360)
         {
-            if (sprite.getPosition().x >= window.getSize().x)
+            if (sprite.getPosition().x >= window.getSize().x-30)
             {
                 SetAngle(angle - angleChange);
             }
