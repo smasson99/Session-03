@@ -11,12 +11,13 @@ public:
     Movable();
     bool Init(std::string path);
     void SetPosition(float x, float y);
+    void MultiplySizeFrom(float multiplicator);
     float SetRotation(float deg, bool isRandian);
     sf::Vector2f GenerateDirection(float angle, bool isRadian);
     sf::Vector2f GetPosition() const;
-    sf::Sprite GetSprite() const;
     float GetX() const;
     float GetY() const;
+    void Draw(sf::RenderWindow& mainWin);
 private:
     float posX;
     float posY;

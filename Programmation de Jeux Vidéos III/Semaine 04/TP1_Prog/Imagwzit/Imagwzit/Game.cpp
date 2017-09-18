@@ -21,6 +21,13 @@ int Game::testTest()
 
 int Game::run()
 {
+    projectiles.reserve(300);
+    //Initialisation des vecteurs:
+    for (int i = 0; i < projectiles.capacity(); ++i)
+    {
+        projectiles.push_back(player.CreateProjectile());
+    }
+
 	if (!init())
 	{
 		return EXIT_FAILURE;
@@ -44,6 +51,15 @@ bool Game::init()
 
 	//POUR L'INSTANT, on garde ça simple.  Si un asset n'est pas chargé, on fait échouer le jeu
 
+
+    //Initiation des projectiles
+    for (int i = 0; i < projectiles.size(); ++i)
+    {
+        if (projectiles.at(i).Init("Sprites\\Projectiles\\Bullet.png") == false)
+        {
+            return false;
+        }
+    }
 
 	if (!terrainT.loadFromFile("Sprites\\Terrain.jpg"))
 	{
@@ -115,16 +131,11 @@ void Game::getInputs()
 			mainWin.close();
 		}
 	}
-    //Pour le contrôle avec les flèches du clavier
-	(Keyboard::isKeyPressed(Keyboard::Up)) ? haut = true : haut = false;
-    (Keyboard::isKeyPressed(Keyboard::Down)) ? bas = true : bas = false;
-	(Keyboard::isKeyPressed(Keyboard::Left)) ? gauche = true : gauche = false;
-	(Keyboard::isKeyPressed(Keyboard::Right)) ? droite = true : droite = false;
-    //Pour le contrôle avec WASD
-    (Keyboard::isKeyPressed(Keyboard::W)) ? haut = true : haut = false;
-    (Keyboard::isKeyPressed(Keyboard::S)) ? bas = true : bas = false;
-    (Keyboard::isKeyPressed(Keyboard::A)) ? gauche = true : gauche = false;
-    (Keyboard::isKeyPressed(Keyboard::D)) ? droite = true : droite = false;
+    //Pour le contrôle avec les flèches du clavier et WASD
+	(Keyboard::isKeyPressed(Keyboard::Up)) || (Keyboard::isKeyPressed(Keyboard::W)) ? haut = true : haut = false;
+    (Keyboard::isKeyPressed(Keyboard::Down)) || (Keyboard::isKeyPressed(Keyboard::S)) ? bas = true : bas = false;
+	(Keyboard::isKeyPressed(Keyboard::Left)) || (Keyboard::isKeyPressed(Keyboard::A)) ? gauche = true : gauche = false;
+	(Keyboard::isKeyPressed(Keyboard::Right)) || (Keyboard::isKeyPressed(Keyboard::D)) ? droite = true : droite = false;
     //Pour les clicks
     (Mouse::isButtonPressed(Mouse::Left)) ? click = true : click = false;
 }
@@ -143,23 +154,44 @@ void Game::update()
     //Si click, ajouter un projectile
     if (click)
     {
-        projectiles.push_back(player.CreateProjectile());
+        if (player.CanFire())
+        {
+            bool hasCreated = false;
+            for (int i = 0; i < projectiles.capacity(); ++i)
+            {
+                if (projectiles.at(i).IsEnable() == false)
+                {
+                    projectiles.at(i).SetEnable(true, player.GetPosition(), player.GetAngle());
+                    hasCreated = true;
+                    break;
+                }
+            }
+            if (hasCreated == false)
+            {
+                projectiles.reserve(100);
+                for (int i = projectiles.size(); i < projectiles.capacity(); ++i)
+                {
+                    projectiles.push_back(player.CreateProjectile());
+                }
+            }
+        }
     }
     //Pour chaque projectile
     for (int i = 0; i < projectiles.size(); ++i)
     {
-        if (projectiles.size() > 0)
-            bool debug;
         //Updater chacun des projectiles
-        projectiles.at(i).Update();
-        //Dans le cas d'une sortie de zone
-        if (/*projectiles.at(i).GetX() < 0 ||
-            projectiles.at(i).GetY() < 0 ||*/
-            mainWin.getSize().x - projectiles.at(i).GetX() > LARGEUR_ECRAN ||
-            mainWin.getSize().y - projectiles.at(i).GetY() > HAUTEUR_ECRAN)
+        if (projectiles.at(i).IsEnable())
         {
-            //Détruire le projectile
-            projectiles.erase(projectiles.begin() + i);
+            projectiles.at(i).Update();
+        }
+        //Dans le cas d'une sortie de zone
+        if (projectiles.at(i).GetX() < 0 ||
+            projectiles.at(i).GetY() < 0 ||
+            projectiles.at(i).GetX() > terrainT.getSize().x ||
+            projectiles.at(i).GetY() > terrainT.getSize().y)
+        {
+            //Désactiver les projectiles
+            projectiles.at(i).SetEnable(false, player.GetPosition(), player.GetAngle());
         }
     }
 
@@ -182,7 +214,7 @@ void Game::draw()
 	mainWin.setView(view);
 
 	mainWin.draw(terrain);
-    mainWin.draw(player.GetSprite());
+    player.Draw(mainWin);
 	mainWin.draw(zombie[0]);
 	mainWin.draw(zombie[1]);
 	mainWin.draw(zombie[2]);
@@ -192,7 +224,8 @@ void Game::draw()
     for (int i = 0; i < projectiles.size(); ++i)
     {
         //Dessiner chacun des projectiles
-        mainWin.draw(projectiles.at(i).GetSprite());
+        if (projectiles.at(i).IsEnable())
+            projectiles.at(i).Draw(mainWin);
     }
 
 	mainWin.display();

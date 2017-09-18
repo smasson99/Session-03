@@ -24,6 +24,11 @@ void Movable::SetPosition(float x, float y)
     sprite.setPosition(posX, posY);
 }
 
+void Movable::MultiplySizeFrom(float multiplicator)
+{
+    //sprite.setScale(sf::Vector2f(texture.getSize().x*multiplicator, texture.getSize().y*multiplicator));
+}
+
 float Movable::SetRotation(float unit, bool isRadian)
 {
     if (isRadian)
@@ -48,11 +53,6 @@ sf::Vector2f Movable::GetPosition() const
     return sf::Vector2f(posX, posY);
 }
 
-sf::Sprite Movable::GetSprite() const
-{
-    return sprite;
-}
-
 float Movable::GetX() const
 {
     return posX;
@@ -61,6 +61,11 @@ float Movable::GetX() const
 float Movable::GetY() const
 {
     return posY;
+}
+
+void Movable::Draw(sf::RenderWindow & mainWin)
+{
+    mainWin.draw(sprite);
 }
 
 float Movable::ToDegree(float radians) const

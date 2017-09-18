@@ -3,12 +3,28 @@
 Player::Player()
 {
     //Initialisation des varaibles par défaut
+    cadence = 0.15f;
+    time = sf::seconds(cadence);
+    clock.restart();
 }
 
-//void Player::Fire()
-//{
-//    
-//}
+bool Player::CanFire()
+{
+    if (clock.getElapsedTime().asSeconds() > time.asSeconds())
+    {
+        clock.restart();
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+
+float Player::GetAngle()
+{
+    return currentAngle;
+}
 
 void Player::Update(float x, float y)
 {
