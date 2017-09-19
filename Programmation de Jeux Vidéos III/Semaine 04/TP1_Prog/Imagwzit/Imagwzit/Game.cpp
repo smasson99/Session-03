@@ -195,10 +195,32 @@ void Game::update()
         }
     }
 
-	view.move(moveX, moveY);
+    //Bouger la caméra lorsque le joueur est dans le range valide
+    if (player.GetX() >= LIMITE_VUE_MIN_X && player.GetX() <= LIMITE_VUE_MAX_X)
+    {
+        view.move(moveX, 0);
+    }
+    if (player.GetY() >= LIMITE_VUE_MIN_Y && player.GetY() <= LIMITE_VUE_MAX_Y)
+    {
+        view.move(0, moveY);
+    }
 
 	ajusterDepassementLimitesVue();
-    player.SetPosition(view.getCenter().x, view.getCenter().y);
+    //Déplacer le joueur
+    if (player.GetX() <= LARGEUR_MONDE - 45 && player.GetX() >= 45 &&
+        player.GetY() <= HAUTEUR_MONDE - 45 && player.GetY() >= 45)
+    {
+        player.SetPosition(player.GetX() + moveX, player.GetY() + moveY);
+    }
+    else if (player.GetX() < 45)
+        player.SetPosition(45, player.GetY());
+    else if (player.GetY() < 45)
+        player.SetPosition(player.GetX(), 45);
+    else if (player.GetX() > LARGEUR_MONDE - 45)
+        player.SetPosition(LARGEUR_MONDE - 45, player.GetY());
+    else if (player.GetY() > HAUTEUR_MONDE - 45)
+        player.SetPosition(player.GetX(), HAUTEUR_MONDE - 45);
+
     //Position de la souris
     sf::Vector2f mousePos = mainWin.mapPixelToCoords(mouse.getPosition(mainWin));
     //Updater le joueur

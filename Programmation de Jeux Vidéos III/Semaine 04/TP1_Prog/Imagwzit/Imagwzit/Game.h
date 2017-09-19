@@ -60,7 +60,6 @@ private:
 	bool bas = false;
 
     bool click = false;
-    bool isFirst = true;
 
 	/*Fin du transfert supposé vers les classes*/
 
