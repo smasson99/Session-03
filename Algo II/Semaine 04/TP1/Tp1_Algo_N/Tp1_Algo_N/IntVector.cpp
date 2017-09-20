@@ -98,6 +98,7 @@ void IntVector::push_back(const int& value)
 /// </summary>
 void IntVector::pop_back()
 {
+    tab[nbElem] = ~int();
     nbElem -= 1;
 }
 
@@ -119,7 +120,7 @@ IntVector::IntVector()
 /// </sumary>
 IntVector::~IntVector()
 {
-    delete tab;
+    delete[] tab;
 }
 
 /// <summary>
@@ -141,7 +142,7 @@ void IntVector::reserve(size_type new_cap)
     cap = new_cap;
     *tab = *tabTemp;
     //Nettoyage...
-    delete tabTemp;
+    delete[] tabTemp;
 }
 
 /// <summary>
@@ -172,8 +173,8 @@ IntVector::IntVector(const IntVector& other)
 
 IntVector& IntVector::operator=(const IntVector &other)
 {
-    resize(other.size);
-    for (int i = 0; i < other.size; ++i)
+    resize(other.size());
+    for (int i = 0; i < other.size(); ++i)
     {
         push_back(other.tab[i]);
     }

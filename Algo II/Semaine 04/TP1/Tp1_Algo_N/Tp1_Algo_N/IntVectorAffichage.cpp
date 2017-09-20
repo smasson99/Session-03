@@ -49,7 +49,8 @@ void IntVector::afficher()
     if(cap > nbElem)
     {
         cout<<" "<<i;
-        if(cap-nbElem>1)cout<<" a "<<cap-1;
+        if(cap-nbElem>1)cout<<" a "<<cap;
         cout<<": (--en reserve--)"<<endl;
     }
+    system("pause");
 }

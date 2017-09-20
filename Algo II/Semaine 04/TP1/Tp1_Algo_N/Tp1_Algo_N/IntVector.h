@@ -49,10 +49,6 @@ private:
     size_type nbElem = 10;
     size_type cap = 50;
     
-    //TODO: variable à enlever. Ne sert qu'a vous donner un front() et back()
-    //      de départ qui retourne une valeur quelquonque.
-    int first = -42, last = 42;
-    
 }; //class IntVector_fbr
 
 
