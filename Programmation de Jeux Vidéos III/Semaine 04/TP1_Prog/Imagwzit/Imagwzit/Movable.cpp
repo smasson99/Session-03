@@ -5,15 +5,21 @@
 
 Movable::Movable()
 {
+    //Initialisation des valeurs par défaut
     posX = 0.00f;
     posY = 0.00f;
 }
 
 bool Movable::Init(std::string path)
 {
+    //Loading des textures
     bool result = texture.loadFromFile(path);
     sprite.setTexture(texture);
     sprite.setOrigin(texture.getSize().x / 2, texture.getSize().y / 2);
+    //Initialiser les collisions en fonction de la texture
+    sphereCollider.SetRayon(texture.getSize().x / 2);
+    sphereCollider.SetPosition(posX, posY);
+    //Retourner le résultat de l'opération de chargement
     return result;
 }
 
@@ -22,11 +28,7 @@ void Movable::SetPosition(float x, float y)
     posX = x;
     posY = y;
     sprite.setPosition(posX, posY);
-}
-
-void Movable::MultiplySizeFrom(float multiplicator)
-{
-    //sprite.setScale(sf::Vector2f(texture.getSize().x*multiplicator, texture.getSize().y*multiplicator));
+    sphereCollider.SetPosition(posX, posY);
 }
 
 float Movable::SetRotation(float unit, bool isRadian)
@@ -66,6 +68,11 @@ float Movable::GetY() const
 void Movable::Draw(sf::RenderWindow & mainWin)
 {
     mainWin.draw(sprite);
+}
+
+CollisionSphere Movable::GetCollider() const
+{
+    return sphereCollider;
 }
 
 float Movable::ToDegree(float radians) const

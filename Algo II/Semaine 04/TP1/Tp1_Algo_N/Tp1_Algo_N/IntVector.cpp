@@ -73,7 +73,7 @@ int& IntVector::at(size_type index)
     return tab[index];
 }
 
-int& IntVector::operator[](int index)
+int& IntVector::operator[](int index) const
 {
     return tab[index];
 }
@@ -165,6 +165,7 @@ void IntVector::resize(size_type new_size)
 
 IntVector::IntVector(const IntVector& other)
 {
+    delete[] tab;
     nbElem = 0;
     cap = 50;
     tab = new int[cap];
@@ -173,10 +174,9 @@ IntVector::IntVector(const IntVector& other)
 
 IntVector& IntVector::operator=(const IntVector &other)
 {
-    resize(other.size());
     for (int i = 0; i < other.size(); ++i)
     {
-        push_back(other.tab[i]);
+        push_back(other.operator[](i));
     }
     return *this;
 }

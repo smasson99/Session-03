@@ -5,7 +5,6 @@
 
 #include "Character.h"
 #include "Projectile.h"
-#include <SFML\GRAPHICS.HPP>
 
 class Player:public Character
 {
@@ -16,7 +15,10 @@ public:
     float GetAngle();
     void Update(float x, float y);
     Projectile CreateProjectile();
+    int GetHealthPoints() const;
+    void Hit();
 private:
+    int nbHealthPoints;
     float cadence;
     sf::Clock clock;
     sf::Time time;

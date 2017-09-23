@@ -3,21 +3,23 @@
 #define MOVABLE_H
 #include <iostream>
 #include <SFML\Graphics.hpp>
+#include "CollisionSphere.h"
 
 class Movable
 {
 protected:
+    CollisionSphere sphereCollider;
 public:
     Movable();
     bool Init(std::string path);
     void SetPosition(float x, float y);
-    void MultiplySizeFrom(float multiplicator);
     float SetRotation(float deg, bool isRandian);
     sf::Vector2f GenerateDirection(float angle, bool isRadian);
     sf::Vector2f GetPosition() const;
     float GetX() const;
     float GetY() const;
     void Draw(sf::RenderWindow& mainWin);
+    CollisionSphere GetCollider() const;
 private:
     float posX;
     float posY;

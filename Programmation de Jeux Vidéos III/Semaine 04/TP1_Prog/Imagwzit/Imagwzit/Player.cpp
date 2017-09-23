@@ -3,6 +3,7 @@
 Player::Player()
 {
     //Initialisation des varaibles par défaut
+    nbHealthPoints = 3;
     cadence = 0.15f;
     time = sf::seconds(cadence);
     clock.restart();
@@ -39,3 +40,15 @@ Projectile Player::CreateProjectile()
     //Retourner un projectile selon le standard
     return Projectile(GetX(), GetY(), currentAngle, false);
 }
+
+int Player::GetHealthPoints() const
+{
+    return nbHealthPoints;
+}
+
+void Player::Hit()
+{
+    if (nbHealthPoints > 0)
+        nbHealthPoints--;
+}
+

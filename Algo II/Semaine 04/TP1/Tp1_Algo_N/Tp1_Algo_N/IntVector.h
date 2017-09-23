@@ -24,7 +24,7 @@ public:
     
     //Accesseur
     int& at(size_type);
-    int& operator[](int index);
+    int& operator[](int index) const;
     int& front();
     int& back();
     

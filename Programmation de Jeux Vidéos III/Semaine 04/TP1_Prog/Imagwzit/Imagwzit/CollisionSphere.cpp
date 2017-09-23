@@ -33,6 +33,17 @@ bool CollisionSphere::verifierCollision(const CollisionSphere &autreSphere) cons
 	return false;
 }
 
+void CollisionSphere::SetRayon(float rayon)
+{
+    this->rayon = rayon;
+}
+
+void CollisionSphere::SetPosition(float x, float y)
+{
+    posX = x;
+    posY = y;
+}
+
 float CollisionSphere::getRayon() const
 {
 	return rayon;

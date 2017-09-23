@@ -3,6 +3,9 @@
 #ifndef CHARACTER_H
 #define CHARACTER_H
 #include "Movable.h"
+#define _USE_MATH_DEFINES
+#include <cmath>
+#include <math.h>
 
 class Character:public Movable
 {

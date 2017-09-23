@@ -3,12 +3,6 @@
 Projectile::Projectile(float x, float y, float angle, bool isRadian)
 {
     enable = false;
-    bool initialised = Init("Sprites\\Projectiles\\Bullet.png");
-    if (initialised == false)
-    {
-        std::cout << "Attention, sprite de projectiles pas trouvée." << std::endl;
-    }
-    //MultiplySizeFrom(2);
     this->angle = angle;
     this->isRadian = isRadian;
     SetRotation(angle, isRadian);

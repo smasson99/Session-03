@@ -2,6 +2,7 @@
 
 Zombie::Zombie()
 {
+    //Initialisation des variables par défaut
     enable = false;
     speed = 1.0f;
 }
@@ -20,4 +21,9 @@ void Zombie::SetEnabled(bool enable, float x, float y)
 {
     this->enable = enable;
     SetPosition(x, y);
+}
+
+bool Zombie::IsEnable() const
+{
+    return enable;
 }
