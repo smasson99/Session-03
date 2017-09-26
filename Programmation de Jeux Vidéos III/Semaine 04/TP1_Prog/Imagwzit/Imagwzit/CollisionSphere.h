@@ -19,5 +19,3 @@ private:
 	float posX;
 	float posY;
 };
-
-

@@ -3,7 +3,6 @@
 Game::Game()
 {
     //On place dans le contructeur ce qui permet à la game elle-même de fonctionner
-    clockZR.restart();
     mainWin.create(VideoMode(LARGEUR_ECRAN, HAUTEUR_ECRAN, 32), "I made a game with zombies in it!");  // , Style::Titlebar); / , Style::FullScreen);
     view = View(sf::FloatRect(0, 0, LARGEUR_ECRAN, HAUTEUR_ECRAN));
     view.setCenter(LARGEUR_MONDE / 2, HAUTEUR_MONDE / 2);
@@ -15,13 +14,17 @@ Game::Game()
 
 int Game::testTest()
 {
+    
     return 0;
 }
 
 int Game::run()
 {
+    //Initialisation des timers
+    clockCM.restart();
+    clockScore.restart();
     //Réservation des espaces nécessaires
-    
+
     //Projectiles
     //Bullet
     projectiles.reserve(300);
@@ -105,12 +108,7 @@ int Game::run()
 
 bool Game::init()
 {
-    //ATTENTION.  Créer un répertoire dans les fichiers de ressource n'en crée pas un pour autant sur le DD
-    //Créez tout de même des répertoires dans les ressources (pour garder votre projet trié et propre) mais vous devrez
-    //aussi créer des répertoires sur le disque et y placer vos différents assets.
-
-    //POUR L'INSTANT, on garde ça simple.  Si un asset n'est pas chargé, on fait échouer le jeu
-
+    //Début de l'initialisation des ressources
 
     //Initiation des projectiles
     //Courant
@@ -128,6 +126,8 @@ bool Game::init()
         {
             return false;
         }
+        //Initialisation des valeurs par défaut selon le type de projectile
+        flameProjectiles.at(i).SetSpeed(12.0f);
     }
     //Missile
     for (int i = 0; i < missileProjectiles.size(); ++i)
@@ -170,6 +170,7 @@ bool Game::init()
             return false;
         }
     }
+
     //Initialisation des zombies
     for (int i = 0; i < zombies.size(); ++i)
     {
@@ -182,21 +183,25 @@ bool Game::init()
         }
     }
 
+    //Initialisation du terrain
     if (!terrainT.loadFromFile("Sprites\\Terrain.jpg"))
     {
         return false;
     }
 
+    //Initialisation du joueur
     if (player.Init("Sprites\\FreeArt\\Joueur.png") == false)
     {
         return false;
     }
 
+    //Initialisation de la police de caractères
     if (!police.loadFromFile("Polices\\segoepr.ttf"))
     {
         return false;
     }
 
+    //Initialisation de la musique de fond du jeu
     if (!musique.openFromFile("Sons\\i_maed_a_gam3_w1th_z0mb1es_full_song.ogg"))
     {
         return false;
@@ -210,17 +215,12 @@ bool Game::init()
     /*Placer le joueur au centre de la map*/
     player.SetPosition(CENTRE_MONDE_X, CENTRE_MONDE_Y);
 
-    /*Ajouter le texte des statistiques au jeu*/
-    texte.setString("Vies: " + std::to_string(player.GetHealthPoints()) + " Munitions: " + std::to_string(nbProjsPlayer) + "\n" + 
-    "Flammes: " + std::to_string(nbProjsFlame) + " Missiles: " + std::to_string(nbProjsMissile) + " Particules: " + 
-        std::to_string(nbProjsScatter));
+    /*Initialisation du texte du jeu*/
     texte.setFont(police);
     texte.setCharacterSize(30);
     texte.setFillColor(Color::Red);
 
     //musique.play();
-    return true;
-
     return true;
 }
 
@@ -258,12 +258,28 @@ void Game::update()
     if (haut) moveY -= 5.0f;
     if (bas) moveY += 5.0f;
 
-    //Changer les munitions si le bouton est pressé
-    if (changeMunition)
+    //Changer les munitions si le bouton est pressé et que le temps de délais est passé
+    if (changeMunition && clockCM.getElapsedTime().asSeconds() > cMunitionDelay.asSeconds())
     {
         curProj++;
         if (curProj > 3)
             curProj = 0;
+        clockCM.restart();
+        switch (curProj)
+        {
+        case 0:
+            munitionCourante = "Basique";
+            break;
+        case 1:
+            munitionCourante = "Flammes";
+            break;
+        case 2:
+            munitionCourante = "Missiles";
+            break;
+        case 3:
+            munitionCourante = "Particules";
+            break;
+        }
     }
 
     //Si click et assez de munition, ajouter un projectile
@@ -328,18 +344,34 @@ void Game::update()
             case 3:
                 if (nbProjsScatter > 0)
                 {
+                    int scatterPos = 0;
                     for (int i = 0; i < scatterProjectiles.capacity(); ++i)
                     {
-                        if (scatterProjectiles.at(i).IsEnable() == false)
+                        if (scatterProjectiles.at(i).IsEnable() == false && scatterPos < 3)
                         {
-                            scatterProjectiles.at(i).SetEnable(true, player.GetPosition(), player.GetAngle());
-                            nbProjsScatter--;
-                            if (nbProjsScatter < 0)
-                                nbProjsScatter = 0;
-                            break;
+                            switch (scatterPos)
+                            {
+                            case 0:
+                                scatterProjectiles.at(i).SetEnable(true, player.GetPosition(), player.GetAngle());
+                                ++scatterPos;
+                                break;
+                            case 1:
+                                scatterProjectiles.at(i).SetEnable(true, player.GetPosition(), player.GetAngle() + 20);
+                                ++scatterPos;
+                                break;
+                            case 2:
+                                scatterProjectiles.at(i).SetEnable(true, player.GetPosition(), player.GetAngle() - 20);
+                                ++scatterPos;
+                                break;
+                            }
                         }
+                        else if (scatterPos >= 3)
+                            break;
                     }
                 }
+                nbProjsScatter--;
+                if (nbProjsScatter < 0)
+                    nbProjsScatter = 0;
                 break;
             }
         }
@@ -353,11 +385,39 @@ void Game::update()
             {
                 std::uniform_int_distribution<int> genZombiePosX(0, terrainT.getSize().x);
                 std::uniform_int_distribution<int> genZombiePosY(0, terrainT.getSize().y);
-                zombies.at(i).SetEnabled(true, genZombiePosX(generator), genZombiePosY(generator));
+                float spawnX;
+                float spawnY;
+                bool hasFound = false;
+                while (hasFound == false)
+                {
+                    spawnX = genZombiePosX(generator);
+                    if (spawnX < player.GetPosition().x - 100 || spawnX > player.GetPosition().x + 100)
+                    {
+                        hasFound = true;
+                    }
+                }
+                hasFound = false;
+                while (hasFound == false)
+                {
+                    spawnY = genZombiePosX(generator);
+                    if (spawnY < player.GetPosition().y - 100 || spawnY > player.GetPosition().y + 100)
+                    {
+                        hasFound = true;
+                    }
+                }
+                zombies.at(i).SetEnabled(true, spawnX, spawnY);
                 clockZR.restart();
                 break;
             }
         }
+    }
+    //Si le timer est passé et qu'il est possible de le faire, accélérer le spawn des zombies
+    if (canChangeSpawn && clockRateChange.getElapsedTime().asSeconds() > rateChangeDelay.asSeconds())
+    {
+        clockRateChange.restart();
+        zSpawnDelay = sf::seconds(zSpawnDelay.asSeconds() + VARIATION_RATE_CHANGE);
+        if (zSpawnDelay.asSeconds() <= MAX_VARIATION_RATE_CHANGE)
+            canChangeSpawn = false;
     }
     //Pour chaque projectile
     //Bullet
@@ -385,6 +445,7 @@ void Game::update()
         if (flameProjectiles.at(i).IsEnable())
         {
             flameProjectiles.at(i).Update();
+            flameProjectiles.at(i).aScaleFrom(0.05f);
         }
         //Dans le cas d'une sortie de zone
         if (flameProjectiles.at(i).GetX() < 0 ||
@@ -394,6 +455,7 @@ void Game::update()
         {
             //Désactiver les projectiles
             flameProjectiles.at(i).SetEnable(false, player.GetPosition(), player.GetAngle());
+            flameProjectiles.at(i).ResetScale();
         }
     }
     //Missile
@@ -479,7 +541,7 @@ void Game::update()
     //D'abord, le joueur et les zombies
     for (int i = 0; i < zombies.size(); ++i)
     {
-        if (zombies.at(i).IsEnable() && player.GetCollider().verifierCollision(zombies.at(i).GetCollider()))
+        if (zombies.at(i).IsEnable() && !player.IsImmortal() && player.GetCollider().verifierCollision(zombies.at(i).GetCollider()))
         {
             /*Le joueur s'est fait toucher par un zombie, perte d'un point de vie et respawn
             s'il lui en reste.*/
@@ -509,6 +571,8 @@ void Game::update()
                     //Projectile collide avec zombie, tuer le zombie
                     zombies.at(j).SetEnabled(false, curPos.x, curPos.y);
                     projectiles.at(i).SetEnable(false, curPos, 0.0f);
+                    //Updater le score du jeu
+                    UpdaterScoreJeu();
                     //Selon les chances, dropper un pack de projectile
                     if (genChancesMunPack(generator) > 100 - chancesPackDrop)
                     {
@@ -579,7 +643,8 @@ void Game::update()
                     sf::Vector2f curPos = zombies.at(j).GetPosition();
                     //Projectile collide avec zombie, tuer le zombie
                     zombies.at(j).SetEnabled(false, curPos.x, curPos.y);
-                    flameProjectiles.at(i).SetEnable(false, curPos, 0.0f);
+                    //Updater le score du jeu
+                    UpdaterScoreJeu();
                     //Selon les chances, dropper un pack de projectile
                     if (genChancesMunPack(generator) > 100 - chancesPackDrop)
                     {
@@ -650,7 +715,8 @@ void Game::update()
                     sf::Vector2f curPos = zombies.at(j).GetPosition();
                     //Projectile collide avec zombie, tuer le zombie
                     zombies.at(j).SetEnabled(false, curPos.x, curPos.y);
-                    missileProjectiles.at(i).SetEnable(false, curPos, 0.0f);
+                    //Updater le score du jeu
+                    UpdaterScoreJeu();
                     //Selon les chances, dropper un pack de projectile
                     if (genChancesMunPack(generator) > 100 - chancesPackDrop)
                     {
@@ -719,9 +785,11 @@ void Game::update()
                     std::uniform_int_distribution<int> typePack(1, 3);
                     //Position courante du zombie
                     sf::Vector2f curPos = zombies.at(j).GetPosition();
-                    //Projectile collide avec zombie, tuer le zombie
+                    //Projectile collide avec zombie, tuer le zombie et désactiver le projectile
                     zombies.at(j).SetEnabled(false, curPos.x, curPos.y);
                     scatterProjectiles.at(i).SetEnable(false, curPos, 0.0f);
+                    //Updater le score du jeu
+                    UpdaterScoreJeu();
                     //Selon les chances, dropper un pack de projectile
                     if (genChancesMunPack(generator) > 100 - chancesPackDrop)
                     {
@@ -786,7 +854,7 @@ void Game::update()
             //Il y a collision entre le joueur et le pack
             //Ajouter une munition spéciale et des munitions de base
             nbProjsFlame++;
-            nbProjsPlayer += 50;
+            nbProjsPlayer += 75;
             flamePacks.at(i).SetEnabled(false);
             break;
         }
@@ -799,7 +867,7 @@ void Game::update()
         {
             //Il y a collision entre le joueur et le pack
             //Ajouter une munition spéciale et des munitions de base
-            nbProjsMissile++;
+            nbProjsMissile += 6;
             nbProjsPlayer += 50;
             missilePacks.at(i).SetEnabled(false);
             break;
@@ -813,38 +881,71 @@ void Game::update()
         {
             //Il y a collision entre le joueur et le pack
             //Ajouter une munition spéciale et des munitions de base
-            nbProjsScatter++;
-            nbProjsPlayer += 50;
+            nbProjsScatter += 10;
+            nbProjsPlayer += 60;
             scatterPacks.at(i).SetEnabled(false);
             break;
         }
     }
+
+    //Vérifier si le score a atteind une tranche
+    if (currentScore >= trancheCourante)
+    {
+        //Ajouter un point de vie et avancer la tranche
+        player.AddHealthPoints(1);
+        trancheCourante += TRANCHE_POINTS;
+    }
+
     //Ajuster la caméra
     ajusterDepassementLimitesVue();
     //Updater et seter les positions de l'interface
-    texte.setString("Vies: " + std::to_string(player.GetHealthPoints()) + " Munitions: " + std::to_string(nbProjsPlayer) + "\n" +
-        "(1)Flammes: " + std::to_string(nbProjsFlame) + " (2)Missiles: " + std::to_string(nbProjsMissile) + " (3)Particules: " +
-        std::to_string(nbProjsScatter));
-    texte.setPosition(view.getCenter().x -600, view.getCenter().y - 350);
+    texte.setString("Vies: " + std::to_string(player.GetHealthPoints()) + "\tChanger de Munition: Q" +
+        "\tMunitions: " + std::to_string(nbProjsPlayer) + "\tScore: " + std::to_string(currentScore) +
+        "\n" + "Flammes: " + std::to_string(nbProjsFlame) + "\tMissiles: " + std::to_string(nbProjsMissile) +
+        "\tParticules: " + std::to_string(nbProjsScatter) + "\tMunition courante: " + munitionCourante);
+    texte.setPosition(view.getCenter().x - 600, view.getCenter().y - 350);
 }
 
 void Game::draw()
 {
-    //Toujours important d'effacer l'écran précédent
+    //Effacer l'écran précédent
     mainWin.clear();
     mainWin.setView(view);
-
+    //Dessiner le nouvel écran
     mainWin.draw(terrain);
     player.Draw(mainWin);
     mainWin.draw(texte);
 
     //Pour chaque projectile
+    //Bullet
     for (int i = 0; i < projectiles.size(); ++i)
     {
         //Dessiner chacun des projectiles actifs
         if (projectiles.at(i).IsEnable())
             projectiles.at(i).Draw(mainWin);
     }
+    //Flame
+    for (int i = 0; i < flameProjectiles.size(); ++i)
+    {
+        //Dessiner chacun des projectiles actifs
+        if (flameProjectiles.at(i).IsEnable())
+            flameProjectiles.at(i).Draw(mainWin);
+    }
+    //Missile
+    for (int i = 0; i < missileProjectiles.size(); ++i)
+    {
+        //Dessiner chacun des projectiles actifs
+        if (missileProjectiles.at(i).IsEnable())
+            missileProjectiles.at(i).Draw(mainWin);
+    }
+    //Scatter
+    for (int i = 0; i < flameProjectiles.size(); ++i)
+    {
+        //Dessiner chacun des projectiles actifs
+        if (scatterProjectiles.at(i).IsEnable())
+            scatterProjectiles.at(i).Draw(mainWin);
+    }
+
     //Pour chaque packs
     //Flame
     for (int i = 0; i < flamePacks.size(); ++i)
@@ -874,7 +975,7 @@ void Game::draw()
         }
     }
     //Pour chaque zombie
-    for (int i = 0; i < zombies.capacity(); ++i)
+    for (int i = 0; i < zombies.size(); ++i)
     {
         //Dessiner chacun des zombies actifs
         if (zombies.at(i).IsEnable())
@@ -883,6 +984,7 @@ void Game::draw()
         }
     }
 
+    //Afficher l'écran
     mainWin.display();
 }
 
@@ -904,5 +1006,26 @@ void Game::ajusterDepassementLimitesVue()
     else if (view.getCenter().y > LIMITE_VUE_MAX_Y)
     {
         view.setCenter(view.getCenter().x, LIMITE_VUE_MAX_Y);
+    }
+}
+
+void Game::UpdaterScoreJeu()
+{
+    //Updater le score du jeu
+    if (clockScore.getElapsedTime().asSeconds() < scoreDelay.asSeconds())
+    {
+        //Dans ce cas-ci nous avons déjà tué un zombie dans l'intervalle
+        if (delayVariation <= MAX_DELAY_POINTS)
+        {
+            currentScore += inDelayKillPoints;
+            delayVariation += inDelayKillPoints;
+        }
+    }
+    else
+    {
+        //Tandis que dans ce cas-ci nous n'avons pas tué de zombie dans l'intervalle
+        currentScore += basicKillPoints;
+        delayVariation = 0;
+        clockScore.restart();
     }
 }

@@ -6,7 +6,7 @@
 #include "GameObject.h"
 #include <SFML/Audio.hpp>
 #include <SFML/Graphics.hpp>
-
+//#include <CppUnitTest.h>
 using namespace sf;
 
 class Game
@@ -52,8 +52,31 @@ private:
     std::vector<Zombie> zombies;
     /*Voici le timer pour le spawn des zombies*/
     sf::Clock clockZR;
+    /*Voici le timer pour le changement de munition*/
+    sf::Clock clockCM;
+    /*Voici le timer pour les scores*/
+    sf::Clock clockScore;
+    /*Voici le timer pour le rate de spawn des zombies*/
+    sf::Clock clockRateChange;
     /*Voici le délais pour le spawn des zombies*/
     sf::Time zSpawnDelay = sf::seconds(1.0f);
+    /*Voici le délais pour le changement de munition*/
+    sf::Time cMunitionDelay = sf::seconds(0.2f);
+    /*Voici le délais pour le score*/
+    sf::Time scoreDelay = sf::seconds(0.5f);
+    /*Voici le délais pour le rate spawn des zombies*/
+    sf::Time rateChangeDelay = sf::seconds(45);
+    /*Voici les valeurs de rate spawn des zombies*/
+    const float VARIATION_RATE_CHANGE = 0.15f;
+    const float MAX_VARIATION_RATE_CHANGE = 0.2f;
+    bool canChangeSpawn = true;
+    /*Voici les valeurs de points pour le score*/
+    int basicKillPoints = 100;
+    int inDelayKillPoints = 10;
+    int delayVariation = 0;
+    const int MAX_DELAY_POINTS = 500;
+    const int TRANCHE_POINTS = 50000;
+    int trancheCourante = TRANCHE_POINTS;
     /*Voici les vecteurs de projectiles du jeu*/
     std::vector<Projectile> projectiles;
     std::vector<Projectile> flameProjectiles;
@@ -65,17 +88,24 @@ private:
     std::vector<GameObject> scatterPacks;
     /*Le nombre de projectiles du joueur*/
     int nbProjsPlayer = 1200;
-    int nbProjsFlame = 100;
-    int nbProjsMissile = 100;
-    int nbProjsScatter = 100;
+    int nbProjsFlame = 10;
+    int nbProjsMissile = 20;
+    int nbProjsScatter = 25;
     /*Chances de dropper un pack de projectiles*/
     int chancesPackDrop = 5;
     /*Index du projectile courant*/
     int curProj = 0;
+    /*Score du jeu*/
+    int currentScore = 0;
+    /*Munition courante*/
+    std::string munitionCourante = "Basique";
 
     Font police;
     Text texte;
     Music musique;
+
+    /*Autres sons*/
+    Music distantGunSound;
 
     //Booléen des inputs
     bool gauche = false;
@@ -95,6 +125,7 @@ private:
     void draw();
 
     void ajusterDepassementLimitesVue();
+    void UpdaterScoreJeu();
 
     Mouse mouse;
     RenderWindow mainWin;

@@ -9,10 +9,15 @@ class Movable
 {
 protected:
     CollisionSphere sphereCollider;
+    float speed;
 public:
     Movable();
     bool Init(std::string path);
     void SetPosition(float x, float y);
+    void SetSpeed(float newSpeed);
+    void aScaleFrom(float scaleAddition);
+    void SetTransparencyAlpha(float transparency);
+    void ResetScale();
     float SetRotation(float deg, bool isRandian);
     sf::Vector2f GenerateDirection(float angle, bool isRadian);
     sf::Vector2f GetPosition() const;
@@ -20,9 +25,8 @@ public:
     float GetY() const;
     void Draw(sf::RenderWindow& mainWin);
     CollisionSphere GetCollider() const;
+    sf::Texture GetTexture();
 private:
-    float posX;
-    float posY;
     float ToDegree(float radians) const;
     float ToRadian(float degrees) const;
     sf::Texture texture;

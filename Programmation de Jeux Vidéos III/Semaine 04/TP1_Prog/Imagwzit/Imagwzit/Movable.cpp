@@ -6,8 +6,8 @@
 Movable::Movable()
 {
     //Initialisation des valeurs par défaut
-    posX = 0.00f;
-    posY = 0.00f;
+    SetPosition(0, 0);
+    speed = 10.0f;
 }
 
 bool Movable::Init(std::string path)
@@ -18,17 +18,38 @@ bool Movable::Init(std::string path)
     sprite.setOrigin(texture.getSize().x / 2, texture.getSize().y / 2);
     //Initialiser les collisions en fonction de la texture
     sphereCollider.SetRayon(texture.getSize().x / 2);
-    sphereCollider.SetPosition(posX, posY);
+    sphereCollider.SetPosition(sprite.getPosition().x, sprite.getPosition().y);
     //Retourner le résultat de l'opération de chargement
     return result;
 }
 
 void Movable::SetPosition(float x, float y)
 {
-    posX = x;
-    posY = y;
-    sprite.setPosition(posX, posY);
-    sphereCollider.SetPosition(posX, posY);
+    sprite.setPosition(x, y);
+    sphereCollider.SetPosition(x, y);
+}
+
+void Movable::SetSpeed(float newSpeed)
+{
+    speed = newSpeed;
+}
+
+void Movable::aScaleFrom(float scaleAddition)
+{
+    sprite.setScale(sprite.getScale().x + scaleAddition, sprite.getScale().y + scaleAddition);
+    sphereCollider.SetRayon(texture.getSize().x + texture.getSize().x*(1/sprite.getScale().x));
+}
+
+void Movable::SetTransparencyAlpha(float transparency)
+{
+    sprite.setColor(sf::Color(sprite.getColor().r, sprite.getColor().g, sprite.getColor().b, 
+        transparency));
+}
+
+void Movable::ResetScale()
+{
+    sprite.setScale(1, 1);
+    sphereCollider.SetRayon(texture.getSize().x / 2);
 }
 
 float Movable::SetRotation(float unit, bool isRadian)
@@ -52,17 +73,17 @@ sf::Vector2f Movable::GenerateDirection(float angle, bool isRadian)
 
 sf::Vector2f Movable::GetPosition() const
 {
-    return sf::Vector2f(posX, posY);
+    return sprite.getPosition();
 }
 
 float Movable::GetX() const
 {
-    return posX;
+    return sprite.getPosition().x;
 }
 
 float Movable::GetY() const
 {
-    return posY;
+    return sprite.getPosition().y;
 }
 
 void Movable::Draw(sf::RenderWindow & mainWin)
@@ -73,6 +94,11 @@ void Movable::Draw(sf::RenderWindow & mainWin)
 CollisionSphere Movable::GetCollider() const
 {
     return sphereCollider;
+}
+
+sf::Texture Movable::GetTexture()
+{
+    return texture;
 }
 
 float Movable::ToDegree(float radians) const

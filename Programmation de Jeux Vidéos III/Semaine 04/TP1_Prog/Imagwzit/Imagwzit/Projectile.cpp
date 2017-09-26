@@ -6,7 +6,7 @@ Projectile::Projectile(float x, float y, float angle, bool isRadian)
     this->angle = angle;
     this->isRadian = isRadian;
     SetRotation(angle, isRadian);
-    this->speed = 20.0f;
+    speed = 20.0f;
     Movable::SetPosition(x, y);
     dir = Movable::GenerateDirection(angle, isRadian);
 }

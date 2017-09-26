@@ -13,7 +13,6 @@ public:
     bool IsEnable();
 private:
     float angle;
-    float speed;
     bool isRadian;
     bool enable;
     sf::Vector2f dir;
