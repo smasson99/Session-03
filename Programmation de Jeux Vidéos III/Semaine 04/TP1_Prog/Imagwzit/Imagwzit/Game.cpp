@@ -12,12 +12,19 @@ Game::Game()
     //https://www.sfml-dev.org/tutorials/2.0/window-window.php#controlling-the-framerate
 }
 
+/// <summary>
+/// Fonction dont le rôle est d'appeler les tests unitaires
+/// </summary>
+/// <returns>Entier indiquant si les tests sont concluants ou non (0 pour oui et autres chiffres pour non)</returns>
 int Game::testTest()
 {
-    
     return 0;
 }
 
+/// <summary>
+/// Fonction dont le rôle est de lancer le jeu en initialisant certaines variables et en appelant les méthodes requises
+/// </summary>
+/// <returns>Entier indiquant 0 si tout s'est bien passé et un autre chiffre si un problème quelconque est survenu.</returns>
 int Game::run()
 {
     //Initialisation des timers
@@ -106,6 +113,10 @@ int Game::run()
     return EXIT_SUCCESS;
 }
 
+/// <summary>
+/// Fonction dont le rôle est d'initialiser tous les components du jeu
+/// </summary>
+/// <returns>Booléen indiquant VRAI si jamais tout le chargement a bien fonctionné ou FAUX si jamais un ficheir n'a pas pu être chargé</returns>
 bool Game::init()
 {
     //Début de l'initialisation des ressources
@@ -220,10 +231,13 @@ bool Game::init()
     texte.setCharacterSize(30);
     texte.setFillColor(Color::Red);
 
-    //musique.play();
+    musique.play();
     return true;
 }
 
+/// <summary>
+/// Fonction dont le rôle est d'obtenir les comandes de touches de l'utilisateur et d'agir selon les touches
+/// </summary>
 void Game::getInputs()
 {
     //On passe l'événement en référence et celui-ci est chargé du dernier événement reçu!
@@ -246,7 +260,9 @@ void Game::getInputs()
     (Mouse::isButtonPressed(Mouse::Left)) ? click = true : click = false;
 }
 
-//Vous devrez centrer la vue sur le joueur: https://www.sfml-dev.org/tutorials/2.4/graphics-view-fr.php
+/// <summary>
+/// Fonction dont le rôle est de mettre à jour la logique du code du jeu
+/// </summary>
 void Game::update()
 {
     //Déclaration des variables
@@ -906,6 +922,9 @@ void Game::update()
     texte.setPosition(view.getCenter().x - 600, view.getCenter().y - 350);
 }
 
+/// <summary>
+/// Fonction dont le rôle est de dessiner à l'écran le contenu du jeu
+/// </summary>
 void Game::draw()
 {
     //Effacer l'écran précédent
@@ -988,6 +1007,9 @@ void Game::draw()
     mainWin.display();
 }
 
+/// <summary>
+/// Fonction dont le rôle est d'ajuster la vue en fonction des dépacements possibles calculés grâce aux limites du jeu
+/// </summary>
 void Game::ajusterDepassementLimitesVue()
 {
     if (view.getCenter().x < LIMITE_VUE_MIN_X)
@@ -1009,6 +1031,9 @@ void Game::ajusterDepassementLimitesVue()
     }
 }
 
+/// <summary>
+/// Fonction dont le rôle est de mettre à jour le score du jeu selon les restrictions
+/// </summary>
 void Game::UpdaterScoreJeu()
 {
     //Updater le score du jeu
