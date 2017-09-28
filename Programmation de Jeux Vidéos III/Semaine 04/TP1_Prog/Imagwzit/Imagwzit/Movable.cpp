@@ -34,7 +34,7 @@ void Movable::SetSpeed(float newSpeed)
     speed = newSpeed;
 }
 
-void Movable::aScaleFrom(float scaleAddition)
+void Movable::AScaleFrom(float scaleAddition)
 {
     sprite.setScale(sprite.getScale().x + scaleAddition, sprite.getScale().y + scaleAddition);
     sphereCollider.SetRayon(texture.getSize().x + texture.getSize().x*(1/sprite.getScale().x));

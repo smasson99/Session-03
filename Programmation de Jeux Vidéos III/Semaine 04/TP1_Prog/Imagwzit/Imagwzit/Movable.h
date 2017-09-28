@@ -15,7 +15,7 @@ public:
     bool Init(std::string path);
     void SetPosition(float x, float y);
     void SetSpeed(float newSpeed);
-    void aScaleFrom(float scaleAddition);
+    void AScaleFrom(float scaleAddition);
     void SetTransparencyAlpha(float transparency);
     void ResetScale();
     float SetRotation(float deg, bool isRandian);

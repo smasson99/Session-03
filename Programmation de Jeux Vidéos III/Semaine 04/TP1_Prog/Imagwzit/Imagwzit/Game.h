@@ -43,7 +43,6 @@ private:
     /* se retrouver de plus en plus à l'intérieur de classes. Ne faites pas tout d'un coup, allez-y lentement et */
     /* assurez-vous que tout fonctionne, une étape à la fois*/
     Sprite terrain;
-    Sprite joueur;
     Player player;
     
     /*Voici le générateur de nombres aléatoires et ses intervalles*/
@@ -103,9 +102,6 @@ private:
     Font police;
     Text texte;
     Music musique;
-
-    /*Autres sons*/
-    Music distantGunSound;
 
     //Booléen des inputs
     bool gauche = false;

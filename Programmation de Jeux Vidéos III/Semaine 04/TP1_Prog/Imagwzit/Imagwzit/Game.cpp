@@ -445,7 +445,7 @@ void Game::update()
         if (flameProjectiles.at(i).IsEnable())
         {
             flameProjectiles.at(i).Update();
-            flameProjectiles.at(i).aScaleFrom(0.05f);
+            flameProjectiles.at(i).AScaleFrom(0.05f);
         }
         //Dans le cas d'une sortie de zone
         if (flameProjectiles.at(i).GetX() < 0 ||

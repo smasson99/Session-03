@@ -12,9 +12,9 @@ class Character:public Movable
 protected:
     float currentAngle;
     sf::Vector2f targetPos;
-    Character();
     void UpdateTargetPosistion(float x, float y);
 public:
+    Character();
     void SetPosition(float x, float y);
     void LookAtTarget();
 private:
