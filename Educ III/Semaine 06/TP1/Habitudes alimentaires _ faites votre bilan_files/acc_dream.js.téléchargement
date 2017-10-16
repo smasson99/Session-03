@@ -1,0 +1,994 @@
+
+
+<!DOCTYPE html>
+
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>
+	PasseportSanté.net
+</title><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" /><meta name="apple-mobile-web-app-capable" content="yes" /><meta name="mobile-web-app-capable" content="yes" /><meta name="theme-color" content="#2688c9" /><meta name="google-site-verification" content="CXFvwzCk2DPKvg-WWaEEn4M4nRY8QFXzL9VimLvYYts" /><meta name="language" content="fr" /><link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:600" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:700" rel="stylesheet">
+<link rel="stylesheet" href="http://www.passeportsante.net/library/css/style.min.css" />
+
+<!--[if lt IE 9]>    
+    <link rel="stylesheet" href="/library/iefix/ie8.css" type="text/css" />
+<![endif]-->
+
+
+<!--[if lt IE 9]>
+	<script src="/library/iefix/jquery-1.11.2.min.js"></script>
+	<script src="/library/iefix/modernizr.js"></script>
+	<script src="/library/iefix/ie8-head.js"></script>
+<![endif]-->
+<!--[if (gte IE 9) | (!IE)]><!-->
+    <script src="http://www.passeportsante.net/library/js/vendor.min.js"></script>
+<!--<![endif]--><meta property="fb:admins" content="1429380296" /><meta property="fb:app_id" content="242901335829574" /><meta property="og:title" content="PasseportSanté.net" /><meta property="og:url" content="http://www.passeportsante.net/js/acc_dream.js" /><meta property="og:site_name" content="http://www.passeportsante.net/" /><meta property="og:type" content="website" />
+    <script type="text/javascript">
+	var _activeAdslots = ["oop","oop_bis","leaderboardTop","leaderboardMiddle","formatNatif","mpu1","espace_malin","mpu2","mpu3","leaderboardBottom"];
+	var _networkCode=42159803;
+	var _adunitCode='PASSEPORTSANTE/rotationgenerale';
+	var pageCriterias = [];
+
+</script>
+		<script src="//static.m6tech.net/pst/prebid-pst.js" type="text/javascript"></script>
+		
+		
+		<script class="kxct" data-id="Jt7vjXT-" data-timing="async" data-version="1.9" type="text/javascript">
+    		window.Krux || ((Krux = function () { Krux.q.push(arguments) }).q = []);
+    		(function () {
+    			var k = document.createElement('script'); k.type = 'text/javascript'; k.async = true;
+    			var m, src = (m = location.href.match(/\bkxsrc=([^&]+)/)) && decodeURIComponent(m[1]);
+    			k.src = /^https?:\/\/([a-z0-9_\-\.]+\.)?krxd\.net(:\d{1,5})?\//i.test(src) ? src : src === "disable" ? "" :
+				  (location.protocol === "https:" ? "https:" : "http:") + "//cdn.krxd.net/controltag?confid=Jt7vjXT-"
+    			;
+    			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(k, s);
+				
+    			function retrieve(n) {
+    				var m, k = 'kx' + n;
+    				if (window.localStorage) { return window.localStorage[k] || ''; }
+    				else if (navigator.cookieEnabled) { m = document.cookie.match(k + '=([^;]*)'); return (m && unescape(m[1])) || ''; }
+    				else { return ''; }
+    			}
+    			Krux.user = retrieve('user');
+    			Krux.segments = retrieve('segs') ? retrieve('segs').split(',') : []
+    		}());
+		</script>
+		
+		
+		<script type='text/javascript' src="//asqm6.nuggad.net/rc?nuggn=701220792&nuggsid=691605379"></script>
+		<!-- Nuug criterias -->
+		<script>
+			pageCriterias.push({ name: "ksg", value: Krux.segments }, { name: "kuid", value: Krux.user });
+			if('undefined' !== typeof NUGGjson) {
+				for (var nuggkey in NUGGjson) {
+					pageCriterias.push([{name:nuggkey, value: NUGGjson[nuggkey]}]);
+				}
+			}
+		</script>
+		<script type = "text/javascript">
+var pageDataLayer = { gravitySiteToken: "pass-sante-17",
+cat: "", subCat: "", template: "", keywords: []};
+</script>
+
+		<script src="//static.m6tech.net/pst/prebid-loader.js" type="text/javascript"></script>
+		
+	
+<link rel="canonical" href="http://www.passeportsante.net/js/acc_dream.js" /></head>
+<body class="pst-component">
+	
+
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-N2DSNF');</script>
+
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N2DSNF" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <form method="post" action="acc_dream.js?status=404&amp;404%3bhttp%3a%2f%2fwww.passeportsante.net%3a80%2fjs%2facc_dream.js" id="form1" class="global-form">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTE4MzA0MjQ2NzIPZBYCZg8PFgIeCVRpdGxlUGFnZQUTUGFzc2Vwb3J0U2FudMOpLm5ldGQWBAIBD2QWAgIPD2QWAgIBDxYCHgRUZXh0BZsBPHNjcmlwdCB0eXBlID0gInRleHQvamF2YXNjcmlwdCI+DQp2YXIgcGFnZURhdGFMYXllciA9IHsgZ3Jhdml0eVNpdGVUb2tlbjogInBhc3Mtc2FudGUtMTciLA0KY2F0OiAiIiwgc3ViQ2F0OiAiIiwgdGVtcGxhdGU6ICIiLCBrZXl3b3JkczogW119Ow0KPC9zY3JpcHQ+DQpkAgUPZBYGAgUPZBYCAgcPFgIeC18hSXRlbUNvdW50AggWEGYPZBYCAgEPZBYEAgEPFgQeBGhyZWYFGi9wcm9ibGVtZXMtZXQtbWFsYWRpZXMtcDY5HgVjbGFzcwUMaGFzLWRyb3Bkb3duFgQCAQ8WAh8BBQhNYWxhZGllc2QCAw8WAh4HVmlzaWJsZWdkAgMPZBYCAgEPFgIfAgIWFixmD2QWAgIBDxYEHglpbm5lcmh0bWwFFk1hbGFkaWVzIGRlIEEgJiMyMjQ7IFofAwUdL2ZyL01hdXgvUHJvYmxlbWVzL0luZGV4LmFzcHhkAgEPZBYCAgEPFgQfBgUQTSYjMjMzO2RpY2FtZW50cx8DBRcvbWVkaWNhbWVudHMvSW5kZXguYXNweGQCAg9kFgICAQ8WBB8GBQ5NJiMyMzM7bm9wYXVzZR8DBR8vZnIvTWF1eC9Qcm9ibGVtZXMvbWVub3BhdXNlLWF6ZAIDD2QWAgIBDxYEHwYFDlN5bXB0JiMyNDQ7bWVzHwMFHS9mci9NYXV4L1N5bXB0b21lcy9JbmRleC5hc3B4ZAIED2QWAgIBDxYEHwYFFExleGlxdWUgbSYjMjMzO2RpY2FsHwMFIy9mci9NYXV4L0xleGlxdWUtTWVkaWNhbC9JbmRleC5hc3B4ZAIFD2QWAgIBDxYEHwYFGFImIzIzMjtnbGVzIGRvdWxvdXJldXNlcx8DBT4vZnIvTWF1eC9Qcm9ibGVtZXMvU2VjdGlvblNwZWNpYWxlLmFzcHg/ZG9jPW1lbnN0cnVhdGlvbnNfc3BlY2QCBg9kFgICAQ8WBB8GBSFJbnRlcnByJiMyMzM7dGVyIHNhIHByaXNlIGRlIHNhbmcfAwVtaHR0cDovL3d3dy5wYXNzZXBvcnRzYW50ZS5uZXQvZnIvQWN0dWFsaXRlcy9Eb3NzaWVycy9Eb3NzaWVyQ29tcGxleGUuYXNweD9kb2M9aW50ZXJwcmV0ZXJfcHJpc2Vfc2FuZ19wYWdlMV9kb2QCBw9kFgICAQ8WBB8GBQZDYW5jZXIfAwU3L2ZyL01hdXgvUHJvYmxlbWVzL1NlY3Rpb25TcGVjaWFsZS5hc3B4P2RvYz1jYW5jZXJfc3BlY2QCCA9kFgICAQ8WBB8GBRBNYXV4IGQmIzM5O2hpdmVyHwMFUmh0dHA6Ly93d3cucGFzc2Vwb3J0c2FudGUubmV0L2xhLXNhbnRlLXBlbmRhbnQtbGVzLWZldGVzLWMxMjgvbWFsYWRpZXMtZC1oaXZlci0xMzFkAgkPZBYCAgEPFgQfBgUaRXhhbWVucyBldCBvcCYjMjMzO3JhdGlvbnMfAwUvL2ZyL01hdXgvZXhhbWVucy1tZWRpY2F1eC1vcGVyYXRpb25zL0luZGV4LmFzcHhkAgoPZBYCAgEPFgQfBgUNRGlhYiYjMjMyO3RlIB8DBRcvYmllbi12aXZyZS1zb24tZGlhYmV0ZWQCCw9kFgICAQ8WBB8GBQlNaWdyYWluZXMfAwUnL21pZ3JhaW5lLW1hbC1kZS10ZXRlLWV0LWNlcGhhbGVlcy1sMTAwZAIMD2QWAgIBDxYEHwYFF0FuYWx5c2VzIG0mIzIzMztkaWNhbGVzHwMFJi9mci9NYXV4L2FuYWx5c2VzLW1lZGljYWxlcy9JbmRleC5hc3B4ZAIND2QWAgIBDxYEHwYFCUFydGhyaXRlIB8DBTkvZnIvTWF1eC9Qcm9ibGVtZXMvU2VjdGlvblNwZWNpYWxlLmFzcHg/ZG9jPWFydGhyaXRlX3NwZWNkAg4PZBYCAgEPFgQfBgUOVGh5cm8mIzIzOTtkZSAfAwU5L2ZyL01hdXgvUHJvYmxlbWVzL1NlY3Rpb25TcGVjaWFsZS5hc3B4P2RvYz10aHlyb2lkZV9zcGVjZAIPD2QWAgIBDxYEHwYFEFBhcnRpZXMgZHUgY29ycHMfAwUcL2ZyL3BhcnRpZXMtY29ycHMvSW5kZXguYXNweGQCEA9kFgICAQ8WBB8GBQpBbGxlcmdpZXMgHwMFDy9hbGxlcmdpZXMtbDEwMWQCEQ9kFgICAQ8WBB8GBRRTYW50JiMyMzM7IGRlcyBkZW50cx8DBThodHRwOi8vd3d3LnBhc3NlcG9ydHNhbnRlLm5ldC9oeWdpZW5lLWV0LXNhbnRlLWRlcy1kZW50c2QCEg9kFgICAQ8WBB8GBRVJbmNvbnRpbmVuY2UgVXJpbmFpcmUfAwV0aHR0cDovL3d3dy5wYXNzZXBvcnRzYW50ZS5uZXQvaW5jb250aW5lbmNlLXVyaW5haXJlP3V0bV9zb3VyY2U9cHN0JnV0bV9tZWRpdW09c291c29uZ2xldCZ1dG1fY2FtcGFpZ249YWx3YXlzZGlzY3JlZXRkAhMPZBYCAgEPFgQfBgUOQXJ0aWN1bGF0aW9ucyAfAwU1L2ZyL01hdXgvUHJvYmxlbWVzL1NlY3Rpb25TcGVjaWFsZS5hc3B4P2RvYz1sYXRyX3NwZWNkAhQPZBYCAgEPFgQfBgURRG9zc2llcnMgTWFsYWRpZXMfAwU4aHR0cDovL3d3dy5wYXNzZXBvcnRzYW50ZS5uZXQvbGVzLWRvc3NpZXJzLW1hbGFkaWVzLWwxNDhkAhUPZBYCAgEPFgQfBgUkU3AmIzIzMztjaWFsaXQmIzIzMztzIG0mIzIzMztkaWNhbGVzHwMFJC9mci9zcGVjaWFsaXRlcy1tZWRpY2FsZXMvSW5kZXguYXNweGQCAQ9kFgICAQ9kFgQCAQ8WAh8DBSYvZnIvTWF1eC9hbmFseXNlcy1tZWRpY2FsZXMvSW5kZXguYXNweBYCAgEPFgIfAQUIQW5hbHlzZXNkAgMPFgIfBWgWAgIBDxYCHwIC/////w9kAgIPZBYCAgEPZBYEAgEPFgQfAwUrL2ZyL0FwcHJvY2hlc0NvbXBsZW1lbnRhaXJlcy9NYXAvSW5kZXguYXNweB8EBQxoYXMtZHJvcGRvd24WBAIBDxYCHwEFEFNhbnTDqSBOYXR1cmVsbGVkAgMPFgIfBWdkAgMPZBYCAgEPFgIfAgILFhZmD2QWAgIBDxYEHwYFE0h1aWxlcyBlc3NlbnRpZWxsZXMfAwUrL2ZyL1NvbHV0aW9ucy9IdWlsZXNFc3NlbnRpZWxsZXMvSW5kZXguYXNweGQCAQ9kFgICAQ8WBB8GBSRNJiMyMzM7ZGljYW1lbnRzIGhvbSYjMjMzO29wYXRoaXF1ZXMfAwUyL2ZyL1NvbHV0aW9ucy9NZWRpY2FtZW50c0hvbWVvcGF0aGlxdWVzL0luZGV4LmFzcHhkAgIPZBYCAgEPFgQfBgUWSGVyYmllciBtJiMyMzM7ZGljaW5hbB8DBSkvZnIvU29sdXRpb25zL0hlcmJpZXJNZWRpY2luYWwvSW5kZXguYXNweGQCAw9kFgICAQ8WBB8GBRpIdWlsZXMgdiYjMjMzO2cmIzIzMzt0YWxlcx8DBTNodHRwOi8vd3d3LnBhc3NlcG9ydHNhbnRlLm5ldC9odWlsZXMtdmVnZXRhbGVzLWcxNTJkAgQPZBYCAgEPFgQfBgUPTSYjMjMzO2RpdGF0aW9uHwMFEC9tZWRpdGF0aW9uLWwxNTBkAgUPZBYCAgEPFgQfBgUZUGhhcm1hY29wJiMyMzM7ZSBjaGlub2lzZR8DBSwvZnIvU29sdXRpb25zL1BoYXJtYWNvcGVlQ2hpbm9pc2UvSW5kZXguYXNweGQCBg9kFgICAQ8WBB8GBR9Qcm9kdWl0cyBkZSBzYW50JiMyMzM7IG5hdHVyZWxzHwMFKy9mci9Tb2x1dGlvbnMvUGxhbnRlc1N1cHBsZW1lbnRzL0luZGV4LmFzcHhkAgcPZBYCAgEPFgQfBgUnTGEgbWFnYXppbmUgZGUgbGEgc2FudCYjMjMzOyBhdSBuYXR1cmVsHwMFJy9sZS1tYWdhemluZS1kZS1sYS1zYW50ZS1hdS1uYXR1cmVsLWw2OGQCCA9kFgICAQ8WBB8GBRpNJiMyMzM7ZGVjaW5lIGNoaW5vaXNlIDEwMR8DBSkvZnIvVGhlcmFwaWVzL01lZGVjaW5lQ2hpbm9pc2UvSW5kZXguYXNweGQCCQ9kFgICAQ8WBB8GBRJQaHl0b3RoJiMyMzM7cmFwaWUfAwUvL3BoeXRvdGhlcmFwaWUtc2Utc29pZ25lci1hdmVjLWxlcy1wbGFudGVzLWwxMTVkAgoPZBYCAgEPFgQfBgUOVGgmIzIzMztyYXBpZXMfAwUeL2ZyL1RoZXJhcGllcy9HdWlkZS9JbmRleC5hc3B4ZAIDD2QWAgIBD2QWBAIBDxYEHwMFHC9mci9OdXRyaXRpb24vTWFwL0luZGV4LmFzcHgfBAUMaGFzLWRyb3Bkb3duFgQCAQ8WAh8BBQlOdXRyaXRpb25kAgMPFgIfBWdkAgMPZBYCAgEPFgIfAgIJFhJmD2QWAgIBDxYEHwYFDE1pZXV4IG1hbmdlch8DBRAvbWlldXgtbWFuZ2VyLWM3ZAIBD2QWAgIBDxYEHwYFBElNQyAfAwUoL2ZyL051dHJpdGlvbi9SZWdpbWVzL0ZpY2hlLmFzcHg/ZG9jPUlNQ2QCAg9kFgICAQ8WBB8GBQpOdXRyaW1lbnRzHwMFKy9mci9OdXRyaXRpb24vUGFsbWFyZXNOdXRyaW1lbnRzL0luZGV4LmFzcHhkAgMPZBYCAgEPFgQfBgUMUiYjMjMzO2dpbWVzHwMFIC9mci9OdXRyaXRpb24vUmVnaW1lcy9JbmRleC5hc3B4ZAIED2QWAgIBDxYEHwYFCEFsaW1lbnRzHwMFLS9mci9OdXRyaXRpb24vRW5jeWNsb3BlZGllQWxpbWVudHMvSW5kZXguYXNweGQCBQ9kFgICAQ8WBB8GBRpEaSYjMjMyO3RlcyBzcCYjMjMzO2NpYWxlcx8DBR8vZnIvTnV0cml0aW9uL0RpZXRlcy9JbmRleC5hc3B4ZAIGD2QWAgIBDxYEHwYFB01haWdyaXIfAwUML21haWdyaXItYzE2ZAIHD2QWAgIBDxYEHwYFCFJlY2V0dGVzHwMFIS9mci9OdXRyaXRpb24vUmVjZXR0ZXMvSW5kZXguYXNweGQCCA9kFgICAQ8WBB8GBRNSZWNldHRlcyBTYW50JiMyMzM7HwMFRS9yZWNldHRlcy1zYW50ZS1sYS1jdWlzaW5lLWZhY2lsZS1ldC1yYXBpZGUtcG91ci1nYXJkZXItbGEtZm9ybWUtbDE1NWQCBA9kFgICAQ9kFgQCAQ8WAh8DBRgvZnIvZ3Jvc3Nlc3NlL0luZGV4LmFzcHgWAgIBDxYCHwEFBU1hbWFuZAIDDxYCHwVoFgICAQ8WAh8CAv////8PZAIFD2QWAgIBD2QWBAIBDxYEHwMFHy9mci9WaXZyZUVuU2FudGUvTWFwL0luZGV4LmFzcHgfBAUMaGFzLWRyb3Bkb3duFgQCAQ8WAh8BBQxBdSBxdW90aWRpZW5kAgMPFgIfBWdkAgMPZBYCAgEPFgIfAgIMFhhmD2QWAgIBDxYEHwYFB0ZhbWlsbGUfAwUNL2ZhbWlsbGUtYzEyM2QCAQ9kFgICAQ8WBB8GBSJTYW50JiMyMzM7IG1lbnRhbGUgZXQgJiMyMzM7bW90aXZlHwMFHS9zYW50ZS1tZW50YWxlLWV0LWVtb3RpdmUtYzQxZAICD2QWAgIBDxYEHwYFElNhbnQmIzIzMzsgYW5pbWFsZR8DBRwvZnIvc2FudGUtYW5pbWFsZS9JbmRleC5hc3B4ZAIDD2QWAgIBDxYEHwYFE1NhbnQmIzIzMzsgcHJhdGlxdWUfAwUTL3NhbnRlLXByYXRpcXVlLWM3MmQCBA9kFgICAQ8WBB8GBQ1CaWVuIHZpZWlsbGlyHwMFEi9iaWVuLXZpZWlsbGlyLWMyOGQCBQ9kFgICAQ8WBB8GBRJBdWRpbyAtIFZpZCYjMjMzO28fAwUfL2ZyL0F1ZGlvVmlkZW9CYWxhZG8vSW5kZXguYXNweGQCBg9kFgICAQ8WBB8GBRImIzIwMjt0cmUgZW4gZm9ybWUfAwURL2V0cmUtZW4tZm9ybWUtYzFkAgcPZBYCAgEPFgQfBgUNRW52aXJvbm5lbWVudB8DBRIvZW52aXJvbm5lbWVudC1jMzdkAggPZBYCAgEPFgQfBgUaQWN0dWFsaXQmIzIzMztzIHNhbnQmIzIzMzsfAwUjL2ZyL0FjdHVhbGl0ZXMvTm91dmVsbGVzL0luZGV4LmFzcHhkAgkPZBYCAgEPFgQfBgUOU2V4dWFsaXQmIzIzMzsfAwUOL3NleHVhbGl0ZS1jMjBkAgoPZBYCAgEPFgQfBgUNVGVzdHMgZXQgcXVpeh8DBSIvZnIvVml2cmVFblNhbnRlL1Rlc3QvRGVmYXVsdC5hc3B4ZAILD2QWAgIBDxYEHwYFE0Rvc3NpZXJzIFNhbnQmIzIzMzsfAwUiL2ZyL0FjdHVhbGl0ZXMvRG9zc2llcnMvSW5kZXguYXNweGQCBg9kFgICAQ9kFgQCAQ8WAh8DBRovZnIvcHN5Y2hvbG9naWUvSW5kZXguYXNweBYCAgEPFgIfAQULUHN5Y2hvbG9naWVkAgMPFgIfBWgWAgIBDxYCHwIC/////w9kAgcPZBYCAgEPZBYEAgEPFgQfAwUdL2ZyL0FjdHVhbGl0ZXMvTWFwL0luZGV4LmFzcHgfBAUMaGFzLWRyb3Bkb3duFgQCAQ8WAh8BBQtOb3MgZXhwZXJ0c2QCAw8WAh8FZ2QCAw9kFgICAQ8WAh8CAgUWCmYPZBYCAgEPFgQfBgUnTGVzIGNocm9uaXF1ZXMgZXQgYmxvZ3VlcyBkJiMzOTtleHBlcnRzHwMFIC9mci9Db21tdW5hdXRlL0Jsb2d1ZS9JbmRleC5hc3B4ZAIBD2QWAgIBDxYEHwYFCUVudHJldnVlcx8DBSMvZnIvQWN0dWFsaXRlcy9FbnRyZXZ1ZXMvSW5kZXguYXNweGQCAg9kFgICAQ8WBB8GBQhBbm51YWlyZR8DBSYvZnIvQ29tbXVuYXV0ZS9hc3NvY2lhdGlvbnMvSW5kZXguYXNweGQCAw9kFgICAQ8WBB8GBRtSJiMyMzM7cG9uc2VzIGQmIzM5O2V4cGVydHMfAwUoL2ZyL0NvbW11bmF1dGUvUmVwb25zRXNleHBlcnQvSW5kZXguYXNweGQCBA9kFgICAQ8WBB8GBRFCaWJsaW90aCYjMjMyO3F1ZR8DBR0vZnIvUC9iaWJsaW90aGVxdWUvSW5kZXguYXNweGQCCQ9kFgICAQ9kFgJmDw9kFgIeBXN0eWxlBQ1kaXNwbGF5Om5vbmU7ZAILD2QWAgIBD2QWAgIBD2QWBAIJDxYCHwVoZAILDxYCHwVoZGQ3Fa0Az7v+X3ccfvtESUpCktIffQ==" />
+</div>
+
+		<div id="oop" class="pstAd mb0">
+	<script type="text/javascript">
+		if(typeof(displayAd)!='undefined')displayAd("oop");
+	</script>
+</div>
+		<div id="oop_bis" class="pstAd">
+	<script type="text/javascript">
+		if(typeof(displayAd)!='undefined')displayAd("oop_bis");
+	</script>
+</div>
+		<script>
+			//detect body sponso
+			var theBody = document.body, theBodyStyle = theBody.style.backgroundImage; if (theBodyStyle.currentStyle) var theBodyCss = theBodyStyle.currentStyle.backgroundImage; else if (window.getComputedStyle) var theBodyCss = window.getComputedStyle(theBody).getPropertyValue("background-image");
+			(theBodyStyle || "none" != theBodyCss || 0 == theBodyStyle.indexOf("1x1.gif") || 0 == theBodyCss.indexOf("1x1.gif")) && (theBody.className += " bodySponso");
+		</script>
+        <div class="off-canvas-wrap" data-offcanvas>
+            <div class="inner-wrap" id="topOfPage">
+                
+<header>
+    <div class="bg-white-smoke hide-for-small hide-for-print">
+        <div class="row">
+            <div id="HeadCtl_userNotLogged" class="small-6 columns">
+                <span><a href="https://www.passeportsante.net/fr/P/DevenirMembre/Index.aspx?prov=haut" class="button bg-white-smoke txt-oil fw600 fs14 txtuppercase radius-bottom6">S'inscrire</a></span>
+                <span><a href="https://www.passeportsante.net/fr/P/DevenirMembre/Index.aspx?prov=haut" class="button bg-primary-light-2 fw600 txt-white fs14 txtuppercase radius-bottom6 icon-user">
+                    S'identifier
+                </a></span>
+            </div>
+			
+        </div>
+    </div>
+
+    <div class="row bg-white pt15 pb15">
+        <div class="large-5 medium-7 small-12 columns">
+            <a href="#" class="left-off-canvas-toggle dblock menu-icon left hide-for-large-up hide-for-print"><span></span></a>
+			<div id="HeadCtl_pstLogo" class="mb0"><a href="http://www.passeportsante.net" class="sprites-logo-baseline" title="Un clic pour comprendre, des solutions pour agir"><span class="dnone">PasseportSante.net - Un clic pour comprendre, des solutions pour agir</span></a></div>
+        </div>
+        <div class="large-4 medium-5 small-12 hide-for-small columns pt10 hide-for-print">
+            <div class="search-header">
+                <div class="p5 ofhidden input-icon">
+                    <input type="text" placeholder="Recherche" class="border-1-primary radius2 pl20 fs15 mb0" id="searchField" onkeypress="return searchcheckKey(event,this.value);">
+                    <a href="javascript:void(0);" onclick="GoSearchCopernic(document.getElementById('searchField').value,0);" class="icon-zoom txt-primary fs22"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="large-3 medium-12 small-12 hide-for-medium-down columns txtright pt20 hide-for-print">
+            <a id="headerTopLinkSymptomes" href="http://www.passeportsante.net/fr/Maux/Symptomes/Index.aspx" class="fs12 txt-primary border-right1-gainsboro pr10"><span class="icon-man fs16 diblock vamiddle pr5"></span> Symptômes</a>
+            <a id="headerTopLinkMedicaments" href="http://www.passeportsante.net/medicaments/index.aspx" class="fs12 txt-primary pl5"><span class="icon-drug fs16 diblock vamiddle pr5"></span> Médicaments </a>
+        </div>
+    </div>
+</header>
+
+<nav class="main-nav left-off-canvas-menu hide-for-print">
+    <section class="p10 bg-white-smoke hide-for-large-up">
+        <div class="search-nav">
+            <div class="p5 ofhidden input-icon">
+                <input type="text" placeholder="Recherche" class="border-1-primary radius2 pl15 fs15 mb0" id="Text1" onkeypress="return searchcheckKey(event,this.value);">
+                    <a href="javascript:void(0);" onclick="GoSearchCopernic(document.getElementById('searchField').value,0);" class="icon-zoom txt-primary fs20"></a>
+            </div>
+        </div>
+        <div>
+            <a href="http://www.passeportsante.net/fr/Maux/Symptomes/Index.aspx" class="fs12 txt-primary border-right1-gainsboro pr10"><span class="icon-man"></span> Symptômes</a>
+            <a href="http://www.passeportsante.net/medicaments/index.aspx" class="fs12 txt-primary pl5"><span class="icon-drug"></span> Médicaments </a>
+        </div>
+    </section>
+    <section class="main-section">
+        <ul>
+            <li class="hide-for-large-up">
+                <a href="http://www.passeportsante.net">Accueil</a>
+            </li>
+			
+					<li id="HeadCtl_FirstLevelMenu_topItem_0">
+						<span><a id="HeadCtl_FirstLevelMenu_lnkMenu_0" href="http://www.passeportsante.net/problemes-et-maladies-p69" class="has-dropdown">
+							Maladies
+							<span id="HeadCtl_FirstLevelMenu_menuArrow_0" class="icon-arrow-right fs10 hide-for-large-up"></span>
+							
+						</a></span>
+						<ul id="HeadCtl_FirstLevelMenu_SecondLevelCtnr_0" class="dropdown large-block-grid-3">
+							
+									<li class="dropdown-item">
+										<span class="concierge1F44C11FBE4AC3C51F30C14F4148434E43C21FB6494B43C5194AC2C0C5"><var id="HeadCtl_FirstLevelMenu_SecondLevelMenu_0_lnkSubMenu_0">Maladies de A &#224; Z</var></span>
+										<span class="icon-arrow-right right fs15 txt-primary"></span>
+									</li>
+								
+									<li class="dropdown-item">
+										<span class="concierge1F4E434B46424A4E4349CBC21FB6494B43C5194AC2C0C5"><var id="HeadCtl_FirstLevelMenu_SecondLevelMenu_0_lnkSubMenu_1">M&#233;dicaments</var></span>
+										<span class="icon-arrow-right right fs15 txt-primary"></span>
+									</li>
+								
+									<li class="dropdown-item">
+										<span class="concierge1F44C11FBE4AC3C51F30C14F4148434E43C21F4E43494FC04AC3C2431E4ACD"><var id="HeadCtl_FirstLevelMenu_SecondLevelMenu_0_lnkSubMenu_2">M&#233;nopause</var></span>
+										<span class="icon-arrow-right right fs15 txt-primary"></span>
+									</li>
+								
+									<li class="dropdown-item">
+										<span class="concierge1F44C11FBE4AC3C51F32C64EC0CB4F4E43C21FB6494B43C5194AC2C0C5"><var id="HeadCtl_FirstLevelMenu_SecondLevelMenu_0_lnkSubMenu_3">Sympt&#244;mes</var></span>
+										<span class="icon-arrow-right right fs15 txt-primary"></span>
+									</li>
+								
+									<li class="dropdown-item">
+										<span class="concierge1F44C11FBE4AC3C51FB843C546CAC3431EBE434B46424A481FB6494B43C5194AC2C0C5"><var id="HeadCtl_FirstLevelMenu_SecondLevelMenu_0_lnkSubMenu_4">Lexique m&#233;dical</var></span>
+										<span class="icon-arrow-right right fs15 txt-primary"></span>
+									</li>
+								
+									<li class="dropdown-item">
+										<span class="concierge1F44C11FBE4AC3C51F30C14F4148434E43C21F324342CB464F4932C04342464A4843194AC2C0C52F4B4F422E4E4349C2CBC1C34ACB464F49C23FC2C04342"><var id="HeadCtl_FirstLevelMenu_SecondLevelMenu_0_lnkSubMenu_5">R&#232;gles douloureuses</var></span>
+										<span class="icon-arrow-right right fs15 txt-primary"></span>
+									</li>
+								
+									<li class="dropdown-item">
+										<span class="concierge45CBCBC02D1F1FCCCCCC19C04AC2C243C04FC1CBC24A49CB43194943CB1F44C11FBA42CBC34A4846CB43C21FBB4FC2C24643C1C21FBB4FC2C24643C1B24F4EC04843C543194AC2C0C52F4B4F422E4649CB43C1C0C143CB43C13FC0C146C2433FC24A494C3FC04A4C432A3F4B4F"><var id="HeadCtl_FirstLevelMenu_SecondLevelMenu_0_lnkSubMenu_6">Interpr&#233;ter sa prise de sang</var></span>
+										<span class="icon-arrow-right right fs15 txt-primary"></span>
+									</li>
+								
+									<li class="dropdown-item">
+										<span class="concierge1F44C11FBE4AC3C51F30C14F4148434E43C21F324342CB464F4932C04342464A4843194AC2C0C52F4B4F422E424A494243C13FC2C04342"><var id="HeadCtl_FirstLevelMenu_SecondLevelMenu_0_lnkSubMenu_7">Cancer</var></span>
+										<span class="icon-arrow-right right fs15 txt-primary"></span>
+									</li>
+								
+									<li class="dropdown-item">
+										<span class="concierge45CBCBC02D1F1FCCCCCC19C04AC2C243C04FC1CBC24A49CB43194943CB1F484A1EC24A49CB431EC043494B4A49CB1E4843C21E4443CB43C21E422A21251F4E4A484A4B4643C21E4B1E4546C443C11E2A222A"><var id="HeadCtl_FirstLevelMenu_SecondLevelMenu_0_lnkSubMenu_8">Maux d&#39;hiver</var></span>
+										<span class="icon-arrow-right right fs15 txt-primary"></span>
+									</li>
+								
+									<li class="dropdown-item">
+										<span class="concierge1F44C11FBE4AC3C51F43C54A4E4349C21E4E434B46424AC3C51E4FC043C14ACB464F49C21FB6494B43C5194AC2C0C5"><var id="HeadCtl_FirstLevelMenu_SecondLevelMenu_0_lnkSubMenu_9">Examens et op&#233;rations</var></span>
+										<span class="icon-arrow-right right fs15 txt-primary"></span>
+									</li>
+								
+									<li class="dropdown-item">
+										<span class="concierge1F414643491EC446C4C1431EC24F491E4B464A4143CB43"><var id="HeadCtl_FirstLevelMenu_SecondLevelMenu_0_lnkSubMenu_10">Diab&#232;te </var></span>
+										<span class="icon-arrow-right right fs15 txt-primary"></span>
+									</li>
+								
+									<li class="dropdown-item">
+										<span class="concierge1F4E464CC14A4649431E4E4A481E4B431ECB43CB431E43CB1E4243C0454A484343C21E482A2020"><var id="HeadCtl_FirstLevelMenu_SecondLevelMenu_0_lnkSubMenu_11">Migraines</var></span>
+										<span class="icon-arrow-right right fs15 txt-primary"></span>
+									</li>
+								
+									<li class="dropdown-item">
+										<span class="concierge1F44C11FBE4AC3C51F4A494A48C6C243C21E4E434B46424A4843C21FB6494B43C5194AC2C0C5"><var id="HeadCtl_FirstLevelMenu_SecondLevelMenu_0_lnkSubMenu_12">Analyses m&#233;dicales</var></span>
+										<span class="icon-arrow-right right fs15 txt-primary"></span>
+									</li>
+								
+									<li class="dropdown-item">
+										<span class="concierge1F44C11FBE4AC3C51F30C14F4148434E43C21F324342CB464F4932C04342464A4843194AC2C0C52F4B4F422E4AC1CB45C146CB433FC2C04342"><var id="HeadCtl_FirstLevelMenu_SecondLevelMenu_0_lnkSubMenu_13">Arthrite </var></span>
+										<span class="icon-arrow-right right fs15 txt-primary"></span>
+									</li>
+								
+									<li class="dropdown-item">
+										<span class="concierge1F44C11FBE4AC3C51F30C14F4148434E43C21F324342CB464F4932C04342464A4843194AC2C0C52F4B4F422ECB45C6C14F464B433FC2C04342"><var id="HeadCtl_FirstLevelMenu_SecondLevelMenu_0_lnkSubMenu_14">Thyro&#239;de </var></span>
+										<span class="icon-arrow-right right fs15 txt-primary"></span>
+									</li>
+								
+									<li class="dropdown-item">
+										<span class="concierge1F44C11FC04AC1CB4643C21E424FC1C0C21FB6494B43C5194AC2C0C5"><var id="HeadCtl_FirstLevelMenu_SecondLevelMenu_0_lnkSubMenu_15">Parties du corps</var></span>
+										<span class="icon-arrow-right right fs15 txt-primary"></span>
+									</li>
+								
+									<li class="dropdown-item">
+										<span class="concierge1F4A484843C14C4643C21E482A202A"><var id="HeadCtl_FirstLevelMenu_SecondLevelMenu_0_lnkSubMenu_16">Allergies </var></span>
+										<span class="icon-arrow-right right fs15 txt-primary"></span>
+									</li>
+								
+									<li class="dropdown-item">
+										<span class="concierge45CBCBC02D1F1FCCCCCC19C04AC2C243C04FC1CBC24A49CB43194943CB1F45C64C464349431E43CB1EC24A49CB431E4B43C21E4B4349CBC2"><var id="HeadCtl_FirstLevelMenu_SecondLevelMenu_0_lnkSubMenu_17">Sant&#233; des dents</var></span>
+										<span class="icon-arrow-right right fs15 txt-primary"></span>
+									</li>
+								
+									<li class="dropdown-item">
+										<span class="concierge45CBCBC02D1F1FCCCCCC19C04AC2C243C04FC1CBC24A49CB43194943CB1F4649424F49CB4649434942431EC3C146494A46C1432FC3CB4E3FC24FC3C142432EC0C2CB14C3CB4E3F4E434B46C34E2EC24FC3C24F494C4843CB14C3CB4E3F424A4EC04A464C492E4A48CC4AC6C24B46C242C14343CB"><var id="HeadCtl_FirstLevelMenu_SecondLevelMenu_0_lnkSubMenu_18">Incontinence Urinaire</var></span>
+										<span class="icon-arrow-right right fs15 txt-primary"></span>
+									</li>
+								
+									<li class="dropdown-item">
+										<span class="concierge1F44C11FBE4AC3C51F30C14F4148434E43C21F324342CB464F4932C04342464A4843194AC2C0C52F4B4F422E484ACBC13FC2C04342"><var id="HeadCtl_FirstLevelMenu_SecondLevelMenu_0_lnkSubMenu_19">Articulations </var></span>
+										<span class="icon-arrow-right right fs15 txt-primary"></span>
+									</li>
+								
+									<li class="dropdown-item">
+										<span class="concierge45CBCBC02D1F1FCCCCCC19C04AC2C243C04FC1CBC24A49CB43194943CB1F4843C21E4B4FC2C24643C1C21E4E4A484A4B4643C21E482A2B25"><var id="HeadCtl_FirstLevelMenu_SecondLevelMenu_0_lnkSubMenu_20">Dossiers Maladies</var></span>
+										<span class="icon-arrow-right right fs15 txt-primary"></span>
+									</li>
+								
+									<li class="dropdown-item">
+										<span class="concierge1F44C11FC2C04342464A4846CB43C21E4E434B46424A4843C21FB6494B43C5194AC2C0C5"><var id="HeadCtl_FirstLevelMenu_SecondLevelMenu_0_lnkSubMenu_21">Sp&#233;cialit&#233;s m&#233;dicales</var></span>
+										<span class="icon-arrow-right right fs15 txt-primary"></span>
+									</li>
+								
+						</ul>
+					</li>
+				
+					<li id="HeadCtl_FirstLevelMenu_topItem_1">
+						<span><a id="HeadCtl_FirstLevelMenu_lnkMenu_1" href="http://www.passeportsante.net/fr/Maux/analyses-medicales/Index.aspx">
+							Analyses
+							
+							
+						</a></span>
+						
+					</li>
+				
+					<li id="HeadCtl_FirstLevelMenu_topItem_2">
+						<span><a id="HeadCtl_FirstLevelMenu_lnkMenu_2" href="http://www.passeportsante.net/fr/ApprochesComplementaires/Map/Index.aspx" class="has-dropdown">
+							Santé Naturelle
+							<span id="HeadCtl_FirstLevelMenu_menuArrow_2" class="icon-arrow-right fs10 hide-for-large-up"></span>
+							
+						</a></span>
+						<ul id="HeadCtl_FirstLevelMenu_SecondLevelCtnr_2" class="dropdown large-block-grid-3">
+							
+									<li class="dropdown-item">
+										<span class="concierge1F44C11F324F48C3CB464F49C21FB5C3464843C2B3C2C24349CB4643484843C21FB6494B43C5194AC2C0C5"><var id="HeadCtl_FirstLevelMenu_SecondLevelMenu_2_lnkSubMenu_0">Huiles essentielles</var></span>
+										<span class="icon-arrow-right right fs15 txt-primary"></span>
+									</li>
+								
+									<li class="dropdown-item">
+										<span class="concierge1F44C11F324F48C3CB464F49C21FBE434B46424A4E4349CBC2B54F4E434FC04ACB4546CAC343C21FB6494B43C5194AC2C0C5"><var id="HeadCtl_FirstLevelMenu_SecondLevelMenu_2_lnkSubMenu_1">M&#233;dicaments hom&#233;opathiques</var></span>
+										<span class="icon-arrow-right right fs15 txt-primary"></span>
+									</li>
+								
+									<li class="dropdown-item">
+										<span class="concierge1F44C11F324F48C3CB464F49C21FB543C1414643C1BE434B464246494A481FB6494B43C5194AC2C0C5"><var id="HeadCtl_FirstLevelMenu_SecondLevelMenu_2_lnkSubMenu_2">Herbier m&#233;dicinal</var></span>
+										<span class="icon-arrow-right right fs15 txt-primary"></span>
+									</li>
+								
+									<li class="dropdown-item">
+										<span class="concierge45CBCBC02D1F1FCCCCCC19C04AC2C243C04FC1CBC24A49CB43194943CB1F45C3464843C21EC4434C43CB4A4843C21E4C2A2321"><var id="HeadCtl_FirstLevelMenu_SecondLevelMenu_2_lnkSubMenu_3">Huiles v&#233;g&#233;tales</var></span>
+										<span class="icon-arrow-right right fs15 txt-primary"></span>
+									</li>
+								
+									<li class="dropdown-item">
+										<span class="concierge1F4E434B46CB4ACB464F491E482A2320"><var id="HeadCtl_FirstLevelMenu_SecondLevelMenu_2_lnkSubMenu_4">M&#233;ditation</var></span>
+										<span class="icon-arrow-right right fs15 txt-primary"></span>
+									</li>
+								
+									<li class="dropdown-item">
+										<span class="concierge1F44C11F324F48C3CB464F49C21F30454AC14E4A424FC04343B24546494F46C2431FB6494B43C5194AC2C0C5"><var id="HeadCtl_FirstLevelMenu_SecondLevelMenu_2_lnkSubMenu_5">Pharmacop&#233;e chinoise</var></span>
+										<span class="icon-arrow-right right fs15 txt-primary"></span>
+									</li>
+								
+									<li class="dropdown-item">
+										<span class="concierge1F44C11F324F48C3CB464F49C21F30484A49CB43C232C3C0C048434E4349CBC21FB6494B43C5194AC2C0C5"><var id="HeadCtl_FirstLevelMenu_SecondLevelMenu_2_lnkSubMenu_6">Produits de sant&#233; naturels</var></span>
+										<span class="icon-arrow-right right fs15 txt-primary"></span>
+									</li>
+								
+									<li class="dropdown-item">
+										<span class="concierge1F48431E4E4A4C4ACD4649431E4B431E484A1EC24A49CB431E4AC31E494ACBC3C143481E482425"><var id="HeadCtl_FirstLevelMenu_SecondLevelMenu_2_lnkSubMenu_7">La magazine de la sant&#233; au naturel</var></span>
+										<span class="icon-arrow-right right fs15 txt-primary"></span>
+									</li>
+								
+									<li class="dropdown-item">
+										<span class="concierge1F44C11F3B4543C14AC04643C21FBE434B4342464943B24546494F46C2431FB6494B43C5194AC2C0C5"><var id="HeadCtl_FirstLevelMenu_SecondLevelMenu_2_lnkSubMenu_8">M&#233;decine chinoise 101</var></span>
+										<span class="icon-arrow-right right fs15 txt-primary"></span>
+									</li>
+								
+									<li class="dropdown-item">
+										<span class="concierge1FC045C6CB4FCB4543C14AC046431EC2431EC24F464C4943C11E4AC443421E4843C21EC0484A49CB43C21E482A2A23"><var id="HeadCtl_FirstLevelMenu_SecondLevelMenu_2_lnkSubMenu_9">Phytoth&#233;rapie</var></span>
+										<span class="icon-arrow-right right fs15 txt-primary"></span>
+									</li>
+								
+									<li class="dropdown-item">
+										<span class="concierge1F44C11F3B4543C14AC04643C21FBCC3464B431FB6494B43C5194AC2C0C5"><var id="HeadCtl_FirstLevelMenu_SecondLevelMenu_2_lnkSubMenu_10">Th&#233;rapies</var></span>
+										<span class="icon-arrow-right right fs15 txt-primary"></span>
+									</li>
+								
+						</ul>
+					</li>
+				
+					<li id="HeadCtl_FirstLevelMenu_topItem_3">
+						<span><a id="HeadCtl_FirstLevelMenu_lnkMenu_3" href="http://www.passeportsante.net/fr/Nutrition/Map/Index.aspx" class="has-dropdown">
+							Nutrition
+							<span id="HeadCtl_FirstLevelMenu_menuArrow_3" class="icon-arrow-right fs10 hide-for-large-up"></span>
+							
+						</a></span>
+						<ul id="HeadCtl_FirstLevelMenu_SecondLevelCtnr_3" class="dropdown large-block-grid-3">
+							
+									<li class="dropdown-item">
+										<span class="concierge1F4E4643C3C51E4E4A494C43C11E422C"><var id="HeadCtl_FirstLevelMenu_SecondLevelMenu_3_lnkSubMenu_0">Mieux manger</var></span>
+										<span class="icon-arrow-right right fs15 txt-primary"></span>
+									</li>
+								
+									<li class="dropdown-item">
+										<span class="concierge1F44C11FB9C3CBC146CB464F491F31434C464E43C21FB446424543194AC2C0C52F4B4F422EB6BEB2"><var id="HeadCtl_FirstLevelMenu_SecondLevelMenu_3_lnkSubMenu_1">IMC </var></span>
+										<span class="icon-arrow-right right fs15 txt-primary"></span>
+									</li>
+								
+									<li class="dropdown-item">
+										<span class="concierge1F44C11FB9C3CBC146CB464F491F304A484E4AC143C2B9C3CBC1464E4349CBC21FB6494B43C5194AC2C0C5"><var id="HeadCtl_FirstLevelMenu_SecondLevelMenu_3_lnkSubMenu_2">Nutriments</var></span>
+										<span class="icon-arrow-right right fs15 txt-primary"></span>
+									</li>
+								
+									<li class="dropdown-item">
+										<span class="concierge1F44C11FB9C3CBC146CB464F491F31434C464E43C21FB6494B43C5194AC2C0C5"><var id="HeadCtl_FirstLevelMenu_SecondLevelMenu_3_lnkSubMenu_3">R&#233;gimes</var></span>
+										<span class="icon-arrow-right right fs15 txt-primary"></span>
+									</li>
+								
+									<li class="dropdown-item">
+										<span class="concierge1F44C11FB9C3CBC146CB464F491FB34942C642484FC0434B4643BA48464E4349CBC21FB6494B43C5194AC2C0C5"><var id="HeadCtl_FirstLevelMenu_SecondLevelMenu_3_lnkSubMenu_4">Aliments</var></span>
+										<span class="icon-arrow-right right fs15 txt-primary"></span>
+									</li>
+								
+									<li class="dropdown-item">
+										<span class="concierge1F44C11FB9C3CBC146CB464F491FBB4643CB43C21FB6494B43C5194AC2C0C5"><var id="HeadCtl_FirstLevelMenu_SecondLevelMenu_3_lnkSubMenu_5">Di&#232;tes sp&#233;ciales</var></span>
+										<span class="icon-arrow-right right fs15 txt-primary"></span>
+									</li>
+								
+									<li class="dropdown-item">
+										<span class="concierge1F4E4A464CC146C11E422A24"><var id="HeadCtl_FirstLevelMenu_SecondLevelMenu_3_lnkSubMenu_6">Maigrir</var></span>
+										<span class="icon-arrow-right right fs15 txt-primary"></span>
+									</li>
+								
+									<li class="dropdown-item">
+										<span class="concierge1F44C11FB9C3CBC146CB464F491F31434243CBCB43C21FB6494B43C5194AC2C0C5"><var id="HeadCtl_FirstLevelMenu_SecondLevelMenu_3_lnkSubMenu_7">Recettes</var></span>
+										<span class="icon-arrow-right right fs15 txt-primary"></span>
+									</li>
+								
+									<li class="dropdown-item">
+										<span class="concierge1FC1434243CBCB43C21EC24A49CB431E484A1E42C346C24649431E444A424648431E43CB1EC14AC0464B431EC04FC3C11E4C4AC14B43C11E484A1E444FC14E431E482A2323"><var id="HeadCtl_FirstLevelMenu_SecondLevelMenu_3_lnkSubMenu_8">Recettes Sant&#233;</var></span>
+										<span class="icon-arrow-right right fs15 txt-primary"></span>
+									</li>
+								
+						</ul>
+					</li>
+				
+					<li id="HeadCtl_FirstLevelMenu_topItem_4">
+						<span><a id="HeadCtl_FirstLevelMenu_lnkMenu_4" href="http://www.passeportsante.net/fr/grossesse/Index.aspx">
+							Maman
+							
+							
+						</a></span>
+						
+					</li>
+				
+					<li id="HeadCtl_FirstLevelMenu_topItem_5">
+						<span><a id="HeadCtl_FirstLevelMenu_lnkMenu_5" href="http://www.passeportsante.net/fr/VivreEnSante/Map/Index.aspx" class="has-dropdown">
+							Au quotidien
+							<span id="HeadCtl_FirstLevelMenu_menuArrow_5" class="icon-arrow-right fs10 hide-for-large-up"></span>
+							
+						</a></span>
+						<ul id="HeadCtl_FirstLevelMenu_SecondLevelCtnr_5" class="dropdown large-block-grid-3">
+							
+									<li class="dropdown-item">
+										<span class="concierge1F444A4E464848431E422A2122"><var id="HeadCtl_FirstLevelMenu_SecondLevelMenu_5_lnkSubMenu_0">Famille</var></span>
+										<span class="icon-arrow-right right fs15 txt-primary"></span>
+									</li>
+								
+									<li class="dropdown-item">
+										<span class="concierge1FC24A49CB431E4E4349CB4A48431E43CB1E434E4FCB46C4431E422B2A"><var id="HeadCtl_FirstLevelMenu_SecondLevelMenu_5_lnkSubMenu_1">Sant&#233; mentale et &#233;motive</var></span>
+										<span class="icon-arrow-right right fs15 txt-primary"></span>
+									</li>
+								
+									<li class="dropdown-item">
+										<span class="concierge1F44C11FC24A49CB431E4A49464E4A48431FB6494B43C5194AC2C0C5"><var id="HeadCtl_FirstLevelMenu_SecondLevelMenu_5_lnkSubMenu_2">Sant&#233; animale</var></span>
+										<span class="icon-arrow-right right fs15 txt-primary"></span>
+									</li>
+								
+									<li class="dropdown-item">
+										<span class="concierge1FC24A49CB431EC0C14ACB46CAC3431E422C21"><var id="HeadCtl_FirstLevelMenu_SecondLevelMenu_5_lnkSubMenu_3">Sant&#233; pratique</var></span>
+										<span class="icon-arrow-right right fs15 txt-primary"></span>
+									</li>
+								
+									<li class="dropdown-item">
+										<span class="concierge1F414643491EC4464346484846C11E422125"><var id="HeadCtl_FirstLevelMenu_SecondLevelMenu_5_lnkSubMenu_4">Bien vieillir</var></span>
+										<span class="icon-arrow-right right fs15 txt-primary"></span>
+									</li>
+								
+									<li class="dropdown-item">
+										<span class="concierge1F44C11FBAC34B464F34464B434FB14A484A4B4F1FB6494B43C5194AC2C0C5"><var id="HeadCtl_FirstLevelMenu_SecondLevelMenu_5_lnkSubMenu_5">Audio - Vid&#233;o</var></span>
+										<span class="icon-arrow-right right fs15 txt-primary"></span>
+									</li>
+								
+									<li class="dropdown-item">
+										<span class="concierge1F43CBC1431E43491E444FC14E431E422A"><var id="HeadCtl_FirstLevelMenu_SecondLevelMenu_5_lnkSubMenu_6">&#202;tre en forme</var></span>
+										<span class="icon-arrow-right right fs15 txt-primary"></span>
+									</li>
+								
+									<li class="dropdown-item">
+										<span class="concierge1F4349C446C14F4949434E4349CB1E42222C"><var id="HeadCtl_FirstLevelMenu_SecondLevelMenu_5_lnkSubMenu_7">Environnement</var></span>
+										<span class="icon-arrow-right right fs15 txt-primary"></span>
+									</li>
+								
+									<li class="dropdown-item">
+										<span class="concierge1F44C11FBA42CBC34A4846CB43C21FB94FC3C443484843C21FB6494B43C5194AC2C0C5"><var id="HeadCtl_FirstLevelMenu_SecondLevelMenu_5_lnkSubMenu_8">Actualit&#233;s sant&#233;</var></span>
+										<span class="icon-arrow-right right fs15 txt-primary"></span>
+									</li>
+								
+									<li class="dropdown-item">
+										<span class="concierge1FC243C5C34A4846CB431E422120"><var id="HeadCtl_FirstLevelMenu_SecondLevelMenu_5_lnkSubMenu_9">Sexualit&#233;</var></span>
+										<span class="icon-arrow-right right fs15 txt-primary"></span>
+									</li>
+								
+									<li class="dropdown-item">
+										<span class="concierge1F44C11F3446C4C143B349324A49CB431F3B43C2CB1FBB43444AC348CB194AC2C0C5"><var id="HeadCtl_FirstLevelMenu_SecondLevelMenu_5_lnkSubMenu_10">Tests et quiz</var></span>
+										<span class="icon-arrow-right right fs15 txt-primary"></span>
+									</li>
+								
+									<li class="dropdown-item">
+										<span class="concierge1F44C11FBA42CBC34A4846CB43C21FBB4FC2C24643C1C21FB6494B43C5194AC2C0C5"><var id="HeadCtl_FirstLevelMenu_SecondLevelMenu_5_lnkSubMenu_11">Dossiers Sant&#233;</var></span>
+										<span class="icon-arrow-right right fs15 txt-primary"></span>
+									</li>
+								
+						</ul>
+					</li>
+				
+					<li id="HeadCtl_FirstLevelMenu_topItem_6">
+						<span><a id="HeadCtl_FirstLevelMenu_lnkMenu_6" href="http://www.passeportsante.net/fr/psychologie/Index.aspx">
+							Psychologie
+							
+							
+						</a></span>
+						
+					</li>
+				
+					<li id="HeadCtl_FirstLevelMenu_topItem_7">
+						<span><a id="HeadCtl_FirstLevelMenu_lnkMenu_7" href="http://www.passeportsante.net/fr/Actualites/Map/Index.aspx" class="has-dropdown">
+							Nos experts
+							<span id="HeadCtl_FirstLevelMenu_menuArrow_7" class="icon-arrow-right fs10 hide-for-large-up"></span>
+							
+						</a></span>
+						<ul id="HeadCtl_FirstLevelMenu_SecondLevelCtnr_7" class="dropdown large-block-grid-3">
+							
+									<li class="dropdown-item">
+										<span class="concierge1F44C11FB24F4E4EC3494AC3CB431FB1484F4CC3431FB6494B43C5194AC2C0C5"><var id="HeadCtl_FirstLevelMenu_SecondLevelMenu_7_lnkSubMenu_0">Les chroniques et blogues d&#39;experts</var></span>
+										<span class="icon-arrow-right right fs15 txt-primary"></span>
+									</li>
+								
+									<li class="dropdown-item">
+										<span class="concierge1F44C11FBA42CBC34A4846CB43C21FB349CBC143C4C343C21FB6494B43C5194AC2C0C5"><var id="HeadCtl_FirstLevelMenu_SecondLevelMenu_7_lnkSubMenu_1">Entrevues</var></span>
+										<span class="icon-arrow-right right fs15 txt-primary"></span>
+									</li>
+								
+									<li class="dropdown-item">
+										<span class="concierge1F44C11FB24F4E4EC3494AC3CB431F4AC2C24F42464ACB464F49C21FB6494B43C5194AC2C0C5"><var id="HeadCtl_FirstLevelMenu_SecondLevelMenu_7_lnkSubMenu_2">Annuaire</var></span>
+										<span class="icon-arrow-right right fs15 txt-primary"></span>
+									</li>
+								
+									<li class="dropdown-item">
+										<span class="concierge1F44C11FB24F4E4EC3494AC3CB431F3143C04F49C2B3C243C5C043C1CB1FB6494B43C5194AC2C0C5"><var id="HeadCtl_FirstLevelMenu_SecondLevelMenu_7_lnkSubMenu_3">R&#233;ponses d&#39;experts</var></span>
+										<span class="icon-arrow-right right fs15 txt-primary"></span>
+									</li>
+								
+									<li class="dropdown-item">
+										<span class="concierge1F44C11F301F41464148464FCB4543CAC3431FB6494B43C5194AC2C0C5"><var id="HeadCtl_FirstLevelMenu_SecondLevelMenu_7_lnkSubMenu_4">Biblioth&#232;que</var></span>
+										<span class="icon-arrow-right right fs15 txt-primary"></span>
+									</li>
+								
+						</ul>
+					</li>
+				
+			<li id="HeadCtl_userNotLoggedMobile" class="show-for-small-only bg-primary">
+				<span class="concierge1F44C11F301FBB43C4434946C1BE434E41C1431FB6494B43C5194AC2C0C5"><var>
+					<span class="icon-user mr10"></span>
+					Identification / Inscription
+				</var></span>
+			</li>
+			
+        </ul>
+    </section>
+</nav>
+
+<div class="row bg-white hide-for-medium-down hide-for-print">
+    <div class="small-12 columns mb20">
+        <div class="ofhidden pt10 pb10 sub-header">
+            <div class="large-7 medium-12 columns">
+                <a href="http://www.passeportsante.net/fr/P/AaZ/Index.aspx" class="txt-jumbo fs12 fw600 border-right1-gainsboro pr10">DE A à Z</a>
+                <a href="http://www.passeportsante.net/fr/P/QuiSommesNous/Fiche.aspx?doc=a-propos-de-nous" class="txt-jumbo fs12 fw600 border-right1-gainsboro pr10 pl10">Notre mission</a>
+                <span class="txt-jumbo fs12 fw600 pr10 pl10">Suivez-nous :</span>
+                <a class="button round has-icon-only icon-facebook bg-facebook mr5" href="https://www.facebook.com/PasseportSante.net" target="_blank" rel="nofollow"></a>
+                <a class="button round has-icon-only icon-twitter bg-twitter mr5" href="https://twitter.com/PasseportSante" target="_blank" rel="nofollow"></a>
+                <a class="button round has-icon-only icon-googleplus bg-googleplus mr5" href="https://plus.google.com/105721816942723867845" target="_blank" rel="nofollow"></a>
+                <a class="button round has-icon-only icon-youtube bg-youtube mr5" href="http://www.youtube.com/channel/UC-Jqcc0RdyoW7hVd1oC6b1A" target="_blank" rel="nofollow"></a>
+            </div>
+            <div class="small-5 columns txtright pt5 sub-header-left">
+                <a href="javascript:void(0);" onclick="setBodyFontSize('100%');" class="txt-oil fs10 fw600 border-right1-gainsboro pl10 pr10">A</a>
+                <a href="javascript:void(0);" onclick="setBodyFontSize('105%');" class="txt-oil fs12 fw600 border-right1-gainsboro pl10 pr10">A</a>
+                <a href="javascript:void(0);" onclick="setBodyFontSize('110%');" class="txt-oil fs16 fw600 pl10 pr10">A</a>
+
+                <a href="javascript:window.print();" class="txt-jumbo fs10 diblock pl5 pr5"><span class="sprites-printer"></span> Imprimer</a>
+                <a href="javascript:void(0);" class="txt-jumbo fs10 diblock pl5 pr5" onclick="sendFriendModal();"><span class="sprites-mail"></span> Envoyer à un ami</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+                <div id="leaderboardTopHolder" class="row bg-white">
+                    <div class="small-12 columns mb20">
+                        <div id="leaderboardTop" class="pstAd txtcenter mb0">
+	<script type="text/javascript">
+		if(typeof(displayAd)!='undefined')displayAd("leaderboardTop");
+	</script>
+</div>
+                    </div>
+                </div>
+
+                <main class="row bg-white pb30">
+                    <div id="mainContent" class="large-8 medium-12 small-12 columns">
+                        
+	<h1>Erreur 404 - Page non trouv&#233;e</h1>
+	<p class="bold">
+		Oops, la page que vous cherchez n&#39;existe pas ou a &#233;t&#233; d&#233;plac&#233;e !
+		Veuillez utiliser le menu ou saisir d'autres termes dans le champs de recherche.
+	</p>
+	<p class="bold">
+		<a href="http://www.passeportsante.net">Cliquez ici</a> si vous souhaitez &ecirc;tre redirig&eacute; vers la page d'accueil du site
+	</p>
+
+	<style type="text/css">
+		.error-banner { font-family:monospace;border:1px solid #AAA;padding:5px; }
+		.error-banner .trace { background-color:#F5F6CE;display:block;white-space:nowrap;margin:4px 0; }
+		.error-banner .error-data { white-space:nowrap; }
+		.error-banner .error-data strong { font-family:monospace;color:#0404B4; }
+	</style>
+	<div id="cph_pnlErrorMsg" class="error-banner" style="display:none;">
+	
+		<div class="error-data"><strong>Last Error Message: </strong>  NO ERROR</div>
+		<span class="trace">
+			
+		</span>
+		
+		<div class="error-data"><strong>Error Data: </strong>  </div>
+		<div class="error-data"><strong>UserIP: </strong> 199.202.104.234</div>
+		<div class="error-data"><strong>UserAgent: </strong> Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36</div>
+		<div class="error-data"><strong>Referrer: </strong> http://www.passeportsante.net/fr/VivreEnSante/Tests/test_alimentation_imprimer.aspx</div>
+		<div class="error-data"><strong>RawUrl: </strong> /js/acc_dream.js</div>
+		<div class="error-data"><strong>HostAddress: </strong> 199.202.104.234</div>
+		<div class="error-data"><strong>Server: </strong> PSTWEB1</div>
+	
+</div>
+
+
+                        <div id="shareBottom" class="mb30"></div>
+
+						<div id="leaderboardMiddle" class="pstAd txtcenter">
+	<script type="text/javascript">
+		if(typeof(displayAd)!='undefined')displayAd("leaderboardMiddle");
+	</script>
+</div>
+
+		                <div id="formatNatif" class="pstAd">
+	<script type="text/javascript">
+		if(typeof(displayAd)!='undefined')displayAd("formatNatif");
+	</script>
+</div>
+                    </div>
+                    <aside id="aside" class="large-4 medium-12 small-12 columns hide-for-print">
+                        
+	
+
+<div id="colonneDroite" class="row">
+	<div id="mpu1" class="large-12 medium-6 small-12 columns pstAd txtcenter">
+	<script type="text/javascript">
+		if(typeof(displayAd)!='undefined')displayAd("mpu1");
+	</script>
+</div>
+	<p class="pstAdLegend">Publicit&eacute;</p>
+
+	<div id="espace_malin" class="large-12 medium-6 small-12 columns pstAd pst-focus mb20">
+	<script type="text/javascript">
+		if(typeof(displayAd)!='undefined')displayAd("espace_malin");
+	</script>
+</div>
+    
+    <div id="sidebarfixed" class="small-12 columns">
+        <div class="row">
+		    <div id="mpu2" class="large-12 medium-6 small-12 columns pstAd txtcenter">
+	<script type="text/javascript">
+		if(typeof(displayAd)!='undefined')displayAd("mpu2");
+	</script>
+</div>
+		    <p class="pstAdLegend">Publicit&eacute;</p>
+
+            
+    <div class="large-12 medium-6 small-12 columns">    
+        <div class="pt30 mb20">                
+            <div class="newsletter bg-primary-dark radius6 p20">
+                <div class="sprites-newsletter right"></div>
+                <div class="fs22 fw600 txt-primary lh12 mb5">Inscrivez-vous à l'infolettre</div>
+                <p class="txt-white">
+                    <b>de PasseportSanté.net</b><br />
+                    et recevez <b>gratuitement</b> le livre numérique de la nutritionniste Hélène Baribeau !
+                </p>
+                <div class="bg-white white-form input-icon">
+                    <input type="text" id="optinRightEmail" placeholder="Saisissez votre email" onfocus="if (this.value == 'Saisissez votre email') { this.value='' };" onblur="if (this.value == '') { this.value='Saisissez votre email' };" onkeypress="javascript:if (event.keyCode == 13) { if(window.document.getElementById('optinRightEmail').value == 'Saisissez votre email' || window.document.getElementById('optinRightEmail').value == '' || !window.document.getElementById('optinRightEmail').value.match(/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]{2,}[.][a-zA-Z]{2,3}$/)) alert('Veuillez saisir un email correct'); else location.href = '/fr/P/DevenirMembre/InformationsPerso.aspx?prov=encartdroite&email=' + window.document.getElementById('optinRightEmail').value; return false; } else { return true; }"/>
+		            <span class="icon-news txt-primary fs20"></span>
+                    <a href="javascript:void(0);" class="button bg-white" onclick="if(window.document.getElementById('optinRightEmail').value == 'Saisissez votre email' || window.document.getElementById('optinRightEmail').value == '' || !window.document.getElementById('optinRightEmail').value.match(/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]{2,}[.][a-zA-Z]{2,3}$/)) alert('Veuillez saisir un email correct'); else location.href = '/fr/P/DevenirMembre/InformationsPerso.aspx?prov=encartdroite&email=' + window.document.getElementById('optinRightEmail').value;">OK</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+            
+        
+            
+			<div id="mpu3" class="large-12 medium-6 small-12 columns pstAd txtcenter">
+	<script type="text/javascript">
+		if(typeof(displayAd)!='undefined')displayAd("mpu3");
+	</script>
+</div>
+				<p class="pstAdLegend">Publicit&eacute;</p>
+			
+
+            <div id="FaceTwit" class="mb20 large-12 medium-6 small-12 columns txtcenter">
+                <fb:like-box href="https://www.facebook.com/PasseportSante.net" width="300" show_faces="true" stream="false" header="true"></fb:like-box>
+                <a href="http://twitter.com/PasseportSante" target="_blank" id="twitWidget"></a>
+            </div>
+
+			
+        </div>	    
+    </div>
+</div>
+
+                    </aside>
+
+                    <span class="smoothScroll button icon-arrow-top has-icon-only scrollToTop hide-for-print" data-smoothscroll="#topOfPage"></span>
+                </main>
+
+				
+					<div class="row bg-white pb20">
+						<div id="leaderboardBottom" class="pstAd small-12 columns txtcenter">
+	<script type="text/javascript">
+		if(typeof(displayAd)!='undefined')displayAd("leaderboardBottom");
+	</script>
+</div>
+					</div>
+				
+
+                
+
+    
+    <footer class="hide-for-print">
+        <div class="row bg-white footer-labels pb30">
+		    <div class="small-12 columns">
+                <div class="border-top1-gainsboro txtcenter pt15">
+				    <div title="Ce site respecte les principes de la charte HONcode" onclick="window.open('https://www.healthonnet.org/HONcode/Conduct_f.html?HONConduct612352'); return false;" class="sprites-honcode diblock">&nbsp;</div>
+					<div class="diblock fs11 txtleft">
+                        Ce site respecte les<br />
+                        <span onclick="window.open('http://www.healthonnet.org/HONcode/Conduct_f.html'); return false;"> principes de la<br/>
+                        charte HONcode</span>.
+					    <br>
+					    <span onclick="window.open('https://www.healthonnet.org/HONcode/Conduct_f.html?HONConduct612352'); return false;">Vérifiez ici.</span>				    
+		            </div>
+				    <div class="sprites-annee2013 diblock" title="Site de l'année 2013"></div>                
+                    <div class="sprites-annee2014 diblock" title="Site de l'année 2014"></div>              
+                    <div class="sprites-annee2015 diblock" title="Site de l'année 2015"></div>
+				    <div class="sprites-excellence diblock mt10" title="Label d'excellence 2012"></div>
+                </div>
+		    </div>
+        </div>   
+		<div class="row bg-white">
+			<div class="columns small-12">
+				<div class="border-top1-gainsboro txtcenter pb25 mb10">
+					<div class="sprites-logo-grey bg-white"></div>
+				</div>
+			</div>
+		</div>
+			
+		<div class="row bg-white">
+			<div class="columns small-12 txtcenter">
+				<span class="fs15 mr10">suivez-nous sur</span>
+				<a href="https://www.facebook.com/PasseportSante.net" target="_blank" class="button bg-facebook has-icon-only icon-facebook" rel="nofollow"></a>
+                <a href="https://plus.google.com/105721816942723867845/posts" target="_blank" class="button bg-googleplus has-icon-only icon-googleplus" rel="nofollow"></a>
+                <a href="https://twitter.com/PasseportSante" target="_blank" class="button bg-twitter has-icon-only icon-twitter" rel="nofollow"></a>
+                <a href="http://www.passeportsante.net/fr/P/P/RSS_Abonner.aspx" target="_blank" class="button has-icon-only icon-rss" rel="nofollow"></a>
+			</div>
+		</div>
+			
+		<div class="row bg-white pt30">
+			<div class="large-3 columns">
+				<div class="bg-smoke lh1 mb15">
+					<span class="bg-white fs15 txt-primary pr10 lh12 txtuppercase">Accès rapide</span>
+				</div>
+				<ul class="fs12 lh14 no-bullet">
+					<li class="pb5"><span class="concierge1F44C11F301FBA4A3D1FB6494B43C5194AC2C0C5"><var class="txt-oil">Plan du site de A à Z</var></span></li>
+					<li class="pb5"><span class="concierge1F44C11F301FBB43C4434946C1BE434E41C1431FB6494B43C5194AC2C0C52FC0C14FC42E454AC3CB"><var class="txt-oil">Abonnement à notre lettre d'information</var></span></li>
+					<li class="pb5"><span class="concierge1F44C11F301FBB43C4434946C1BE434E41C1431FB446424543194AC2C0C52F4B4F422E4AC1424546C4433F41C3484843CB46493FC1C0"><var class="txt-oil">Nos bulletins archivés</var></span></li>
+					<li class="pb5"><span class="concierge1F44C11FBAC34B464F34464B434FB14A484A4B4F1F"><var class="txt-oil">Audio-Vidéo</var></span></li>
+					<li class="pb5"><span class="concierge1F44C11F301FB1464148464FCB4543CAC3431FB6494B43C5194AC2C0C5"><var class="txt-oil">Bibliothèque</var></span></li>
+				</ul>
+				<div class="bg-smoke lh1 mt10 mb15">
+					<span class="concierge1F44C11FBA42CBC34A4846CB43C21FBE4AC01FB6494B43C5194AC2C0C5"><var class="bg-white fs15 txt-primary pr10 lh12 txtuppercase">Actualités</var></span>
+				</div>
+				<ul class="fs12 lh14 no-bullet">
+					<li class="pb5"><span class="concierge1F44C11FBA42CBC34A4846CB43C21FB94FC3C443484843C21FB6494B43C5194AC2C0C5"><var class="txt-oil">Nouvelles</var></span></li>
+					<li class="pb5"><span class="concierge1F44C11FBA42CBC34A4846CB43C21FB349CBC143C4C343C21FB6494B43C5194AC2C0C5"><var class="txt-oil">Entrevues</var></span></li>
+					<li class="pb5"><span class="concierge1F44C11FBA42CBC34A4846CB43C21FBB4FC2C24643C1C21FB6494B43C5194AC2C0C5"><var class="txt-oil">Dossiers</var></span></li>
+				</ul>
+                <div class="bg-smoke lh1 mt10 mb15">
+					<span class="concierge1FC0C14F4148434E43C21E43CB1E4E4A484A4B4643C21EC02426"><var class="bg-white fs16 txt-primary pr10 lh12 txtuppercase">Maladies</var></span>
+				</div>
+				<ul class="fs12 lh14 no-bullet">
+					<li class="pb5"><span class="concierge1F44C11FBE4AC3C51F30C14F4148434E43C21FB6494B43C5194AC2C0C5"><var class="txt-oil">Index des maladies de A à Z</var></span></li>
+				</ul>
+			</div>
+			<div class="large-3 columns">
+				<div class="bg-smoke lh1 mb15">
+					<span class="concierge1F44C11FB9C3CBC146CB464F491FBE4AC01FB6494B43C5194AC2C0C5"><var class="bg-white fs16 txt-primary pr10 lh12 txtuppercase">Nutrition</var></span>
+				</div>
+				<ul class="fs12 lh14 no-bullet">
+					<li class="pb5"><span class="concierge1F44C11FB9C3CBC146CB464F491FB34942C642484FC0434B4643BA48464E4349CBC21FB6494B43C5194AC2C0C5"><var class="txt-oil">Aliments</var></span></li>
+					<li class="pb5"><span class="concierge1F44C11FB9C3CBC146CB464F491F31434243CBCB43C21FB6494B43C5194AC2C0C5"><var class="txt-oil">Recettes</var></span></li>
+					<li class="pb5"><span class="concierge1F44C11FB9C3CBC146CB464F491F304A484E4AC143C2B9C3CBC1464E4349CBC21FB6494B43C5194AC2C0C5"><var class="txt-oil">Nutriments</var></span></li>
+					<li class="pb5"><span class="concierge1F44C11FB9C3CBC146CB464F491F31434C464E43C21FB6494B43C5194AC2C0C5"><var class="txt-oil">Régimes</var></span></li>
+					<li class="pb5"><span class="concierge1F44C11FB9C3CBC146CB464F491FBB4643CB43C21FB6494B43C5194AC2C0C5"><var class="txt-oil">Diètes spéciales</var></span></li>
+				</ul>
+				<div class="bg-smoke lh1 mt10 mb15">
+					<span class="concierge1F44C11F3446C4C143B349324A49CB431FBE4AC01FB6494B43C5194AC2C0C5"><var class="bg-white fs16 txt-primary pr10 lh12 txtuppercase">Santé au quotidien</var></span>
+				</div>
+				<ul class="fs12 lh14 no-bullet">
+					<li class="pb5"><span class="concierge1F4E4643C3C51E4E4A494C43C11E422C"><var class="txt-oil">Mieux manger</var></span></li>
+					<li class="pb5"><span class="concierge1F4E4A464CC146C11E422A24"><var class="txt-oil">Maigrir</var></span></li>
+					<li class="pb5"><span class="concierge1F43CBC1431E43491E444FC14E431E422A"><var class="txt-oil">Être en forme</var></span></li>
+					<li class="pb5"><span class="concierge1F44C11F3446C4C143B349324A49CB431FB349C146424546C1324A3243C5C34A4846CB431FB6494B43C5194AC2C0C5"><var class="txt-oil">Sexualité</var></span></li>
+					<li class="pb5"><span class="concierge1F44C11F3446C4C143B349324A49CB431F324A49CB431EBE4349CB4A481FB6494B43C5194AC2C0C5"><var class="txt-oil">Santé mentale et émotive</var></span></li>
+					<li class="pb5"><span class="concierge1F44C11F3446C4C143B349324A49CB431F34464346484846C11FB6494B43C5194AC2C0C5"><var class="txt-oil">Vieillir en santé</var></span></li>
+					<li class="pb5"><span class="concierge1F44C11F3446C4C143B349324A49CB431FB349C446C14F4949434E4349CB1FB6494B43C5194AC2C0C5"><var class="txt-oil">Environnement</var></span></li>
+					<li class="pb5"><span class="concierge1F44C11FBE4AC3C51F3B43C2CBC21FB6494B43C5194AC2C0C5"><var class="txt-oil">Tests et quiz</var></span></li>
+				</ul>
+			</div>
+			<div class="large-3 columns">
+				<div class="bg-smoke lh1 mb15">
+					<span class="concierge1F44C11F301F3AC346324F4E4E43C2B94FC3C21FB446424543194AC2C0C52F4B4F422E494FC21EC04AC1CB43494A46C143C2"><var class="bg-white fs16 txt-primary pr10 lh12 txtuppercase">Partenaires</var></span>
+				</div>
+				<ul class="fs12 lh14 no-bullet">
+					<li class="pb5"><span class="concierge1F44C11F301F3AC346324F4E4E43C2B94FC3C21FB446424543194AC2C0C52F4B4F422E494FC23FC04AC1CB43494A46C143C23FC242464349CB464446CAC343"><var class="txt-oil">Partenaires scientifiques</var></span></li>
+					<li class="pb5"><span class="concierge1F44C11FB24F4E4EC3494AC3CB431FBAC2C24F42464ACB464F49C21FB6494B43C5194AC2C0C5"><var class="txt-oil">Annuaire</var></span></li>
+                    <li class="pb5"><span class="concierge45CBCBC02D1F1FCCCCCC1942C346C24649434ACD19424F4E1F"><var class="txt-oil">Recette de cuisine </var></span></li>
+					<li class="pb5"><span class="concierge45CBCBC02D1F1FCCCCCC194945C0C1C219424A1F"><var class="txt-oil">NHP Reasearch</var></span></li>
+					
+				</ul>
+				<div class="bg-smoke lh1 mt10 mb15">
+					<span class="concierge1F44C11FBAC0C0C14F424543C2B24F4EC048434E4349CB4A46C143C21FBE4AC01FB6494B43C5194AC2C0C5"><var class="bg-white fs16 txt-primary pr10 lh12 txtuppercase">Santé au naturel</var></span>
+				</div>
+				<ul class="fs12 lh14 no-bullet">
+					<li class="pb5"><span class="concierge1F44C11F324F48C3CB464F49C21F30484A49CB43C232C3C0C048434E4349CBC21FB6494B43C5194AC2C0C5"><var class="txt-oil">Santé au naturel</var></span></li>
+					<li class="pb5"><span class="concierge1F44C11F3B4543C14AC04643C21FBCC3464B431FB6494B43C5194AC2C0C5"><var class="txt-oil">Thérapies</var></span></li>
+					<li class="pb5"><span class="concierge1F44C11F324F48C3CB464F49C21FB543C1414643C1BE434B464246494A481FB6494B43C5194AC2C0C5"><var class="txt-oil">Herbier médicinal</var></span></li>
+					<li class="pb5"><span class="concierge1F44C11F324F48C3CB464F49C21F30454AC14E4A424FC04343B24546494F46C2431FB6494B43C5194AC2C0C5"><var class="txt-oil">Pharmacopée chinoise</var></span></li>
+				</ul>
+			</div>
+				
+			<div class="large-3 columns">
+				<div class="bg-smoke lh1 mb15">
+					<span class="concierge1F44C11F301F3AC346324F4E4E43C2B94FC3C21FB446424543194AC2C0C52F4B4F422E4A1EC0C14FC04FC21E4B431E494FC3C2"><var class="bg-white fs16 txt-primary pr10 lh12 txtuppercase">Qui sommes-nous ?</var></span>
+				</div>
+				<ul class="fs12 lh14 no-bullet">
+					<li class="pb5"><span class="concierge1F44C11F301F3AC346324F4E4E43C2B94FC3C21FB446424543194AC2C0C52F4B4F422E4A1EC0C14FC04FC21E4B431E494FC3C2"><var class="txt-oil">À propos de nous</var></span></li>
+					<li class="pb5"><span class="concierge1F44C11F301F3AC346324F4E4E43C2B94FC3C21FB446424543194AC2C0C52F4B4F422E43CAC346C0433FC04AC2C243C04FC1CB"><var class="txt-oil">Notre équipe</var></span></li>
+					<li class="pb5"><span class="concierge1F44C11F301F3AC346324F4E4E43C2B94FC3C21FB446424543194AC2C0C52F4B4F422EC0C34148464246CB433FC1C0"><var class="txt-oil">Publicité</var></span></li>
+					<li class="pb5"><span class="concierge1F44C11F301F3AC346324F4E4E43C2B94FC3C21FB446424543194AC2C0C52F4B4F422E494FCBC1433F484F4C4F3FC1C0"><var class="txt-oil">Notre logo</var></span></li>
+					<li class="pb5"><span class="concierge1F44C11F301F3AC346324F4E4E43C2B94FC3C21FB446424543194AC2C0C52F4B4F422E4E43CB454F4B4F484F4C46433FC1C0"><var class="txt-oil">Notre méthodologie</var></span></li>
+					<li class="pb5"><span class="concierge1F44C11F301F3AC346324F4E4E43C2B94FC3C21FB446424543194AC2C0C52F4B4F422E424F494B46CB464F49C21E4B1EC3CB464846C24ACB464F491EC0C2493FC1C0"><var class="txt-oil">Conditions d'utilisation</var></span></li>
+					<li class="pb5"><span class="concierge1F44C11F301F3AC346324F4E4E43C2B94FC3C21FB446424543194AC2C0C52F4B4F422E42454AC1CB431E424F4944464B4349CB464A4846CB43"><var class="txt-oil">Charte de confidentialité</var></span></li>
+					<li class="pb5"><span class="concierge1F484F461E424F4F474643C21FB24F49CB4349C31FC0C14FCB4342CB464F491E4B431E484A1EC446431EC0C146C443431E43CB1E4843C21E424F4F474643C21E2521194AC2C0C5"><var class="txt-oil">Gestion des cookies</var></span></li>
+					<li class="pb5"><span class="concierge1F44C11F301F3AC346324F4E4E43C2B94FC3C21FB446424543194AC2C0C52F4B4F422E424FC0C6C1464C45CB3FC1C0"><var class="txt-oil">Reproduction et droits d'auteur</var></span></li>
+					<li class="pb5"><span class="concierge1F4E434B464A"><var class="txt-oil">Pour les médias</var></span></li>
+					<li class="pb5"><span class="concierge1F44C11F301F3AC346324F4E4E43C2B94FC3C21FB24F49CB4A42CB43CDB94FC3C2194AC2C0C5"><var class="txt-oil">Contactez-nous</var></span></li>
+				</ul>
+			</div>
+		</div>
+		<div class="row bg-white">
+			<div class="columns small-12">
+				<div class="border-top1-gainsboro txtcenter mb10">
+                    <div class="bg-white diblock oxygem-logo">
+                        <span class="diblock vamiddle fs14 txt-aluminum pr5">Un site du groupe</span>
+					    <a href="http://www.oxygem.tv/" target="_blank" class="diblock vamiddle sprites-oxygem-grey"></a>
+                    </div>
+				</div>
+			</div>
+		</div>
+			
+		<div class="row bg-white pb10">
+			<div class="columns small-12 txtcenter">
+				<a href="http://www.radins.com" target="_blank" class="diblock mr30 sprites-radins-grey vamiddle fade-hover mb10"><span class="dnone">Radins.com</span></a>
+				<a href="http://www.cuisineaz.com" target="_blank" class="diblock mr30 sprites-cuisineaz-grey vamiddle fade-hover mb10"><span class="dnone">CuisineAZ</span></a>
+				<a href="http://www.meteocity.com/" target="_blank" class="diblock mr30 sprites-meteocity-grey vamiddle fade-hover mb10"><span class="dnone">météocity</span></a>
+				<a href="http://www.weather-wherever.co.uk/" target="_blank" class="diblock mr30 sprites-weather-grey vamiddle fade-hover mb10"><span class="dnone">Weather Wherever.co.uk</span></a>
+				<a href="http://www.fourchette-et-bikini.fr/" target="_blank" class="diblock sprites-fourchette-grey vamiddle fade-hover mb10"><span class="dnone">Fourchette &amp; Bikini</span></a>
+			</div>
+		</div>
+			
+		
+		<div class="row bg-smoke pb30">
+			<div class="columns small-12 pb40">
+                <div class="p20">
+				    <p class="fs10 mb0">
+					    En cas de malaise ou de maladie, consultez d’abord un médecin ou un professionnel de la santé en mesure d’évaluer adéquatement votre état de santé. En utilisant ce site, vous reconnaissez avoir pris connaissance de l’avis de désengagement de responsabilité et vous consentez à ses modalités. Si vous n’y consentez pas, vous n’êtes pas autorisé à utiliser ce site.
+					    <br><br>
+					    La reproduction totale ou partielle des textes, images, extraits vidéo et audio de PasseportSanté.net, sur quelque support que ce soit, de même que l’utilisation du nom de PasseportSanté.net ou toute allusion à PasseportSanté.net à des fins publicitaires sont formellement interdites sous peine de poursuites.<br />
+                        <br /><br />
+				        Reproduction et droit d'auteur © 1998-2017 Oxygem - <a href="http://www.passeportsante.net/fr/P/QuiSommesNous/Fiche.aspx?doc=conditions-d-utilisation-psn_rp" class="txt-oil">Conditions d'utilisation</a> - <a href="http://www.passeportsante.net/fr/P/QuiSommesNous/Fiche.aspx?doc=charte-confidentialite" class="txt-oil">Charte de confidentialité</a>
+				    </p>
+                </div>
+			</div>
+		</div>
+	</footer>
+             </div>
+        </div>
+
+        <div id="ajaxModal" class="foxBox" aria-hidden="true" role="dialog">
+            <a href="#" class="foxboxClose" aria-label="Close">&times;</a>
+        </div>
+
+    </form>
+    
+<!--[if lt IE 9]>	
+	<script src="/library/iefix/ie8-footer.js"></script>
+<![endif]-->
+<script src="http://www.passeportsante.net/library/js/functions.min.js"></script>
+<script>
+    $(document).foundation();
+</script>
+<script type="text/javascript">
+    window.fbAsyncInit = function () {
+        FB.init({
+            appId: '242901335829574', // App ID
+            status: true, // check login status
+            cookie: true, // enable cookies to allow the server to access the session
+            xfbml: true, // parse XFBML            
+            oauth: true
+        });
+    };
+    // Load the SDK Asynchronously
+    (function(doc, script) {
+        var js,
+            fjs = doc.getElementsByTagName(script)[0],
+            add = function(url, id) {
+            if (doc.getElementById(id)) {return;}
+            js = doc.createElement(script);
+            js.src = url;
+            id && (js.id = id);
+            fjs.parentNode.insertBefore(js, fjs);
+        };
+        add('https://apis.google.com/js/platform.js');
+        add('//connect.facebook.net/fr_FR/all.js', 'facebook-jssdk');
+        add('//platform.twitter.com/widgets.js', 'twitter-wjs');
+        add('//assets.pinterest.com/js/pinit.js', 'pinterest-jssdk');
+    }(document, 'script'));
+</script>
+<script id="OSD_SDK" data-osdToken="105b47b8a9de20bd9527860a11de8ccd" src="//osd.oxygem.it/opensight.min.js"></script>
+
+    <script type="text/javascript">
+        function createScripts(analyticsDomain, analyticsScript, messageDomain, messageScript) {
+            /*
+            CREATE THE ANALYTICS SCRIPT
+            */
+            var analyticsScript = (function (a, d) {
+                var s, t; s = d.createElement('script');
+                s.src = a; s.async = 1;
+                t = d.getElementsByTagName('script')[0];
+                t.parentNode.insertBefore(s, t);
+            })("https://" + analyticsDomain + "/" + analyticsScript + ".js", document);
+
+            /*
+            CREATE THE MESSAGE SCRIPT
+            */
+            if (messageDomain !== undefined) {
+                var customMessageScript = (function (a, d) {
+                    var s, t, u; s = d.createElement('script');
+                    if (d.referrer) { u = d.createElement('a'); u.href = d.referrer; a = a + u.hostname; }
+                    s.src = a; s.async = 1;
+                    t = d.getElementsByTagName('script')[0];
+                    t.parentNode.insertBefore(s, t);
+                })("https://" + messageDomain + "/" + messageScript + ".js?ref=", document);
+            }
+        }
+    </script>
+	<!-- Gravity tag -->
+	<script type="text/javascript">
+		!function(a,b,c){"use strict";function d(a){var b=e[c]||{};e[c]=b,b[a]||(b[a]=function(){e._queue[c].push({method:a,args:Array.prototype.slice.apply(arguments)})})}var e=a.scimhtiraidem||{},f="init call config push pushDefault addProperties addProperty onFinish onStart _reset".split(" ");e._queue=e._queue||{},e._names=e._names||[],e._names.push(c),e._queue[c]=e._queue[c]||[],e._startTime=(new Date).getTime(),e._snippetVersion="2.0";for(var g=0;g<f.length;g++)d(f[g]);a.scimhtiraidem=e,a[c]=e[c];var h=b.createElement("script");h.setAttribute("type","text/javascript"),h.setAttribute("src","//static.mediarithmics.com/tag/1/tag.min.js"),h.setAttribute("async","true"),b.getElementsByTagName("script")[0].parentNode.appendChild(h)}(window,document,"gravity");
+		if(typeof pageDataLayer !== 'undefined'){
+			gravity.init({mode: "VISIT",site_token: pageDataLayer.gravitySiteToken});
+			gravity.push("$page_view", {
+				cat: pageDataLayer.cat,
+				subCat: pageDataLayer.subCat,
+				template: pageDataLayer.template,
+				keywords: pageDataLayer.keywords
+			});
+		}
+	</script>
+
+	<!-- Neustar tag -->
+	<script type="text/javascript">
+		function setUpAgknTag(tag) {
+			tag.setBpId("m6fr");
+			if(typeof pageDataLayer !== 'undefined')
+				tag.addEchoKeyValue("cat", pageDataLayer.cat);
+		}
+	</script>
+	<script src="//js.agkn.com/prod/v0/tag.js" async></script>
+<script type="text/javascript">createScripts('hartsfieldrowesville.salleyoklaunion.com', 'kookyy', 'hartsfieldrowesville.salleyoklaunion.com', 'hypotensions');</script>
+            
+    
+	
+	<script type="text/javascript">
+		eval(function (p, a, c, k, e, r) { e = function (c) { return (c < a ? '' : e(parseInt(c / a))) + ((c = c % a) > 35 ? String.fromCharCode(c + 29) : c.toString(36)) }; if (!''.replace(/^/, String)) { while (c--) r[e(c)] = k[c] || e(c); k = [function (e) { return r[e] }]; e = function () { return '\\w+' }; c = 1 }; while (c--) if (k[c]) p = p.replace(new RegExp('\\b' + e(c) + '\\b', 'g'), k[c]); return p }('s 10=4(t){s e={a:4(t,e,n,i){t.A?t.A(e,n,!1):t.L&&(t["e"+e+n]=n,t[e+n]=4(){t["e"+e+n](H.G,i)},t.L("S"+e,t[e+n]))},5:"",h:"T",b:4(t){2.a(f,"N",4(n,i){C i&&(e=i),e.5+=n?n.B:G.B,e.5.7>e.h.7&&(e.5=e.5.V(e.5.7-e.h.7)),e.5==e.h?(e.8(t),e.5="",n.W(),!1):X 0},2),2.3.b(t)},8:4(t){H.O=t},3:{j:0,l:0,k:0,g:0,9:!1,c:!1,u:"",6:["r","r","m","m","q","p","q","p","o","o"],8:4(t){e.8(t)},b:4(t){2.u=2.6,e.a(f,"R",4(t){Q(1==t.K.7&&1==e.3.c){s n=t.K[0];e.3.k=n.w,e.3.g=n.M,e.3.9=!1,e.3.c=!1,e.3.v()}}),e.a(f,"U",4(n){1==e.3.9&&e.3.v(t)},!1),e.a(f,"P",4(t){e.3.j=t.J[0].w,e.3.l=t.J[0].M,e.3.9=!0,e.3.c=!0})},v:4(t){I=F.E(2.j-2.k),D=F.E(2.l-2.g),x=2.j-2.k<0?"p":"q",y=2.l-2.g<0?"m":"r",d=I>D?x:y,d=1==2.9?"o":d,d==2.6[0]&&(2.6=2.6.Y(1,2.6.7)),0==2.6.7&&(2.6=2.u,2.8(t))}}};C"Z"==z t&&e.b(t),"4"==z t&&(e.8=t,e.b()),e};', 62, 63, '||this|iphone|function|input|keys|length|code|tap|addEvent|load|capture|result||document|stop_y|pattern||start_x|stop_x|start_y|DOWN||TAP|RIGHT|LEFT|UP|var||orig_keys|check_direction|pageX|||typeof|addEventListener|keyCode|return|y_magnitude|abs|Math|event|window|x_magnitude|changedTouches|touches|attachEvent|pageY|keydown|location|touchstart|if|touchmove|on|38384040373937396665|touchend|substr|preventDefault|void|slice|string|Konami'.split('|'), 0, {}))
+		new Konami(function () { $("#cph_pnlErrorMsg").toggle(); $('#aside').hide(); });
+	</script>
+
+</body>
+</html>

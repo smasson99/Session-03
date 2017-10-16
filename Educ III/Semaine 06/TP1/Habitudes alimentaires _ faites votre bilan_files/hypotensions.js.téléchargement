@@ -1,0 +1,1 @@
+var CM = function () {}; CM.prototype = { initialize: function () {} }; var adback = adback || {}; adback["CM"] = adback.CM || CM;

@@ -1,0 +1,125 @@
+// Begin search.js
+
+	function GoSearchCopernic(textToSearch, section) {
+		
+		textToSearch = Remplace(textToSearch,"inurl:Maux ","");
+		textToSearch = Remplace(textToSearch,"inurl:Therapies ","");
+		textToSearch = Remplace(textToSearch,"inurl:Nutrition ","");
+		textToSearch = Remplace(textToSearch,"inurl:Actualites ","");
+		textToSearch = Remplace(textToSearch,"inurl:Solutions/PlantesSupplements ","");
+		textToSearch = Remplace(textToSearch,"inurl:P/Bibliotheque ","");
+
+        var tempBaseDomain="http://www.passeportsante.net";
+        
+		if (section == 0)
+		{
+		    location.href = tempBaseDomain+'/fr/P/P/Recherche.aspx?sect=0&cx=011867672021111692487:i1mgwtpuqsg&cof=FORID%3a11&sa=Rechercher&q=' + textToSearch; 
+		}
+		if (section == 1)
+		{
+		    location.href = tempBaseDomain+'/fr/P/P/Recherche.aspx?sect=1&cx=011867672021111692487:i1mgwtpuqsg&cof=FORID%3a11&sa=Rechercher&q=inurl:Maux+' + textToSearch; 
+		}
+		if (section == 2)
+		{
+		    location.href = tempBaseDomain+'/fr/P/P/Recherche.aspx?sect=2&cx=011867672021111692487:i1mgwtpuqsg&cof=FORID%3a11&sa=Rechercher&q=inurl:Therapies+' + textToSearch; 
+		}
+		if (section == 3)
+		{
+		    location.href = tempBaseDomain+'/fr/P/P/Recherche.aspx?sect=3&cx=011867672021111692487:i1mgwtpuqsg&cof=FORID%3a11&sa=Rechercher&q=inurl:Nutrition+' + textToSearch; 
+		}
+		if (section == 4)
+		{
+		    location.href = tempBaseDomain+'/fr/P/P/Recherche.aspx?sect=4&cx=011867672021111692487:i1mgwtpuqsg&cof=FORID%3a11&sa=Rechercher&q=inurl:Actualites+' + textToSearch; 
+		}
+		if (section == 5)
+		{
+		    location.href = tempBaseDomain+'/fr/P/P/Recherche.aspx?sect=5&cx=011867672021111692487:i1mgwtpuqsg&cof=FORID%3a11&sa=Rechercher&q=inurl:Solutions/PlantesSupplements+' + textToSearch; 
+		}		
+		if (section == 6)
+		{
+		    location.href = tempBaseDomain+'/fr/P/P/Recherche.aspx?sect=0&cx=011867672021111692487:i1mgwtpuqsg&cof=FORID%3a11&sa=Rechercher&q=inurl:P/Bibliotheque+' + textToSearch; 
+		}		
+				
+	}
+	function noaccent(chaine) {
+		temp = chaine.replace(/[àâä]/gi,'a');
+		//temp = temp.replace(/[éèêë]/gi,'e');
+		//temp = temp.replace(/[éèêë]/gi,'e');
+		//temp = temp.replace(/[îï]/gi,'i');
+		//temp = temp.replace(/[ôö]/gi,'o');
+		//temp = temp.replace(/[ùûü]/gi,'u');
+		return temp;
+	}
+	
+	function emptyField(Control) { Control.value = '';}	
+
+	function searchcheckKey(e,textToSearch){
+	    
+	    var keycode;
+        if (window.event) keycode = window.event.keyCode;
+        else if (e) keycode = e.which;
+        else return true;
+
+        if (keycode == 13){
+           GoSearchCopernic(textToSearch,0);	
+           return false;
+        }
+        else{
+           return true;
+        }
+        
+	}	
+	
+    function Remplace(expr,a,b) {
+      var i=0
+      while (i!=-1) {
+         i=expr.indexOf(a,i);
+         if (i>=0) {
+            expr=expr.substring(0,i)+b+expr.substring(i+a.length);
+            i+=b.length;
+         }
+      }
+      return expr
+    }
+// End search.js
+
+//Section Search Recettes
+function SelectIndiceSante(chkIndice, hidden)
+{
+    var hid = document.getElementById(hidden);
+    
+    if (chkIndice != null)
+    {
+        if (chkIndice.checked)
+        {
+            if (hid.value != "")
+            {
+                
+                hid.value =  hid.value + chkIndice.value + ";" ;
+                
+            }
+            else
+            {
+                hid.value = chkIndice.value  + ";";
+            }
+        }
+        else
+        {
+            if (hid.value.indexOf(";" + chkIndice.value) > -1)
+            {
+                hid.value = Remplace(hid.value,";" + chkIndice.value,"");
+            }
+            else if (hid.value.indexOf(chkIndice.value + ";") > -1)
+            {
+                hid.value = Remplace(hid.value,chkIndice.value + ";","");
+            }
+            else
+            {
+                hid.value = Remplace(hid.value,chkIndice.value,"");
+            }
+            
+        }
+        
+    }
+  
+}
