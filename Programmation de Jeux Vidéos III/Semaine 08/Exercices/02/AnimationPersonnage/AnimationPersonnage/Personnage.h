@@ -1,6 +1,8 @@
 #pragma once
 #define _USE_MATH_DEFINES
 #include <SFML/Graphics.hpp>
+#include "Animation.h"
+#include "AnimationPlayer.h"
 
 using namespace sf;
 
@@ -58,6 +60,11 @@ namespace isometrique
         float animRate;
         bool isIdle;
         bool isRightFrameIdle;
+        bool isTest;
+
+        Animation* animMoveRight;
+
+        AnimationPlayer animPlayer;
 
 		Vector2f interfaceDeplacement; //Vecteur de déplacement du personnage
 	};

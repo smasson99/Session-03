@@ -88,11 +88,15 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Animation.cpp" />
+    <ClCompile Include="AnimationPlayer.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Personnage.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Animation.h" />
+    <ClInclude Include="AnimationPlayer.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="Personnage.h" />
   </ItemGroup>

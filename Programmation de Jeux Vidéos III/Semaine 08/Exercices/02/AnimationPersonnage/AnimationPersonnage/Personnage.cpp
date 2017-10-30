@@ -1,6 +1,7 @@
 #include "Personnage.h"
 
 using namespace isometrique;
+using namespace platformer;
 
 Texture Personnage::texture; //Initialisation de notre texture (appel du constructeur par défaut - hmmm "défaut" le beau mot de vocabulaire qui soit, comme le dirait un grand sage: https://www.youtube.com/watch?v=RhvIISDoarU)
 
@@ -11,6 +12,8 @@ Personnage::Personnage(const float posX, const float posY, RenderWindow  * const
     animRate = 0.25f;
     isRightFrameIdle = true;
 	setPosition(posX, posY);
+
+    isTest = false;
 }
 
 Personnage::~Personnage()
@@ -73,6 +76,11 @@ void Personnage::ajustementsVisuels()
 			intRectsMouvement[i][j].height = hauteur;
 		}
 	}
+    /******/
+    //Création des animations
+    animMoveRight = new Animation(texture, 0.5f, true);
+    
+    /******/
 
     UpdateAnim(cadran, frameCourante, intRectsImmobile);
     //Comme tous les rectangles on la même taille, on prend le premier
@@ -116,8 +124,10 @@ void Personnage::keyboardMovement()
 		interfaceDeplacement.y = 0.0f;
         if (cadran != 4)
         {
-            cadran = 4;
-            frameCourante = 0;
+            /*cadran = 4;
+            frameCourante = 0;*/
+            animPlayer.Play(animMoveRight);
+            isTest = true;
         }
         else
         {
@@ -299,7 +309,14 @@ void Personnage::joystickMovement()
 //Pour changer l'animation courante
 void isometrique::Personnage::UpdateAnim(const int& cadranCourant, const float& frameCouranteP, IntRect** myRect)
 {
-    setTextureRect(myRect[cadranCourant][(int)frameCouranteP]);
+    if (!isTest)
+    {
+        setTextureRect(myRect[cadranCourant][(int)frameCouranteP]);
+    }
+    else
+    {
+        setTextureRect(animPlayer.GetRect());
+    }
 }
 
 //Pour garder le gamepad propre
